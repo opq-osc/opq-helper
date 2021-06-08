@@ -1,0 +1,15 @@
+{
+  "name": "opq-helper",
+  "version": "1.0.0",
+  "main": "doc/index.md",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1",
+    "vitepress": "^0.14.1"
+  }
+}
