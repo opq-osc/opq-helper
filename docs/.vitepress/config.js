@@ -3,12 +3,12 @@ const owner = 'opq-osc'
 const address = `${owner}/${repo}`
 const lang = 'zh-CN'
 
-const head = [['link', { rel: 'icon', href: `/${repo}/favicon.png` }]]
+const head = [['link', { rel: 'icon', href: '/favicon.png' }]]
 
 module.exports = {
   title: 'OPQ Helper',
   description: 'OPQBot 文档站',
-  base: `/${repo}/`,
+  base: '/',
   lang,
   head,
   themeConfig: {
