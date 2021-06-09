@@ -47,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        text: 'Join us',
+        text: 'About',
         link: '/other/join'
       },
     ],
