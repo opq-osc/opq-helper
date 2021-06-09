@@ -12,6 +12,10 @@ OPQBot 文档站。
     # 安装 yarn
     npm config set registry https://registry.npm.taobao.org
     npm install -g yarn
+    
+    # 设定加速镜像
+    yarn config set registry https://registry.npm.taobao.org -g
+    yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
 
     # 安装依赖
     yarn
@@ -22,7 +26,7 @@ OPQBot 文档站。
 
 启动项目后即可在 `3000` 端口即时修订。
 
-如果不具备环境，请直接 Pull Request `.md` 文件，请按分类放置你的文件或者新开文件夹，但要保证他们在 `dovs` 文件夹下，最后由 Organization Owner 整理即可。
+如果不具备环境，请直接 Pull Request `.md` 文件，请按分类放置你的文件或者新开文件夹，但要保证他们在 `docs` 文件夹下，最后由 Organization Owner 整理即可。
 
 ### 修订内容
 
