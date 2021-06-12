@@ -47,6 +47,12 @@ module.exports = {
         ]
       },
       {
+        text: 'Other',
+        items: [
+          { text: '相关站点', link: '/other/site' }
+        ]
+      },
+      {
         text: 'About',
         link: '/other/join'
       },

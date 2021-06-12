@@ -1,14 +1,22 @@
 <template>
   <div class="wrapper">
-    <div class="line">
+    <!-- lang -->
+    <div class="line" v-if="lang">
       <div class="label">Language:</div>
       <div class="lang">{{ lang }}</div>
     </div>
-    <div class="line">
+    <!-- repo -->
+    <div class="line" v-if="repo">
       <div class="label">Repo:</div>
       <a target="_blank" :href="`https://github.com/${repo}`">{{ repo }}</a>
     </div>
-    <div class="line">
+    <!-- customLink -->
+    <div class="line" v-if="customLink">
+      <div class="label">{{ customLink[0] }}：</div>
+      <a target="_blank" :href="customLink[1]">{{ customLink[2] || customLink[1] }}</a>
+    </div>
+    <!-- owner -->
+    <div class="line" v-if="owner">
       <div class="label">Owner:</div>
       <div class="owner" :title="handleOwner" @click="onOwnerClick">
         <img
@@ -28,6 +36,7 @@ export default {
     lang: String,
     repo: String,
     owner: String,
+    customLink: [String, String, String] /** label, link href, link label */
   },
   computed: {
     handleOwner() {
