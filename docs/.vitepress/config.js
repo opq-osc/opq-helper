@@ -49,7 +49,8 @@ module.exports = {
       {
         text: 'Other',
         items: [
-          { text: '相关站点', link: '/other/site' }
+          { text: '相关站点', link: '/other/site' },
+          { text: 'OPQ Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' }
         ]
       },
       {
