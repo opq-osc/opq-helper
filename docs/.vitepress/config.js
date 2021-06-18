@@ -3,7 +3,27 @@ const owner = 'opq-osc'
 const address = `${owner}/${repo}`
 const lang = 'zh-CN'
 
-const head = [['link', { rel: 'icon', href: '/favicon.png' }]]
+const isDev = process.env.NODE_ENV === 'development'
+
+const head = [
+  ['link', { rel: 'icon', href: '/favicon.png' }],
+  !isDev && [
+    'script',
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-F5CQE58D3F',
+      async: true,
+    },
+  ],
+  !isDev && [
+    'script',
+    {},
+    `window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-F5CQE58D3F');`,
+  ],
+].filter(Boolean)
 
 module.exports = {
   title: 'OPQ Helper',
@@ -34,31 +54,29 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        items: [
-          { text: '从零开始搭建 OPQBot', link: '/guide/manual' }
-        ]
+        items: [{ text: '从零开始搭建 OPQBot', link: '/guide/manual' }],
       },
       {
         text: 'Project',
         items: [
           { text: '开发 SDK', link: '/project/sdk' },
           { text: '开源插件', link: '/project/plugins' },
-          { text: '实用工具', link: '/project/tools' }
-        ]
+          { text: '实用工具', link: '/project/tools' },
+        ],
       },
       {
         text: 'Other',
         items: [
           { text: '相关站点', link: '/other/site' },
-          { text: 'OPQ Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' }
-        ]
+          { text: 'OPQ Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' },
+        ],
       },
       {
         text: 'About',
-        link: '/other/join'
+        link: '/other/join',
       },
     ],
-    
+
     sidebar: 'auto',
     lastUpdated: '上次更新',
     smoothScroll: true,

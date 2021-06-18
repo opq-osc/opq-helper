@@ -4,11 +4,12 @@
   "main": "doc/index.md",
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "dev": "cross-env NODE_ENV=development vitepress dev docs",
+    "build": "cross-env NODE_ENV=production vitepress build docs",
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "sass": "^1.34.1",
     "vitepress": "^0.14.1"
   }
