@@ -2,17 +2,11 @@
 
 你可以不选择开发，快速体验 OPQBot 开源社区提供的丰富插件功能。
 
-## OPQBot-GroupManager
+## Python
 
-<PluginInfo 
-    lang='golang'
-    repo='opq-osc/OPQBot-GroupManager'
-    owner='mcoo'
-/>
+### botoy-plugins
 
-OPQBot 群管理机器人
-
-## botoy-plugins
+<br/>
 
 <PluginInfo 
     lang='python'
@@ -22,17 +16,9 @@ OPQBot 群管理机器人
 
 一些botoy的插件
 
-## IOTQQ_Plugins
+### OPQ-SetuBot
 
-<PluginInfo 
-    lang='lua'
-    repo='opq-osc/IOTQQ_Plugins'
-    owner='MengXin001'
-/>
-
-IOTQQ 机器人 LuaPlugins 插件仓库
-
-## OPQ-SetuBot
+<br/>
 
 <PluginInfo 
     lang='python'
@@ -42,17 +28,9 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 OPQBOT的色图机器人插件
 
-## lua-plugins
+### opqqq-plugin
 
-<PluginInfo 
-    lang='lua'
-    repo='opq-osc/lua-plugins'
-    owner='spirit1431007'
-/>
-
-适用于OPQBOT的一系列lua插件
-
-## opqqq-plugin
+<br/>
 
 <PluginInfo 
     lang='python'
@@ -62,17 +40,9 @@ OPQBOT的色图机器人插件
 
 OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 运势等
 
-## LuaPlugins
+### ioobot
 
-<PluginInfo 
-    lang='lua'
-    repo='opq-osc/LuaPlugins'
-    owner='4490'
-/>
-
-IOTQQ -- Lua插件
-
-## ioobot
+<br/>
 
 <PluginInfo 
     lang='python'
@@ -82,7 +52,23 @@ IOTQQ -- Lua插件
 
 一个适用于OPQBOT 的识图姬
 
-## OPQBOT-jikipedia
+## Go
+
+### OPQBot-GroupManager
+
+<br/>
+
+<PluginInfo 
+    lang='golang'
+    repo='opq-osc/OPQBot-GroupManager'
+    owner='mcoo'
+/>
+
+OPQBot 群管理机器人
+
+### OPQBOT-jikipedia
+
+<br/>
 
 <PluginInfo 
     lang='golang'
@@ -91,4 +77,70 @@ IOTQQ -- Lua插件
 />
 
 opqosc/OPQBot 的查梗插件
+
+## Javascript
+
+### OPQ-NodeJs
+
+<br/>
+
+<PluginInfo 
+    lang='JavaScript'
+    repo='opq-osc/OPQ-NodeJs'
+    owner='4490'
+/>
+
+OPQ-NodeJs
+
+## Lua
+
+### IOTQQ_Plugins
+
+<br/>
+
+<PluginInfo 
+    lang='lua'
+    repo='opq-osc/IOTQQ_Plugins'
+    owner='MengXin001'
+/>
+
+IOTQQ 机器人 LuaPlugins 插件仓库
+
+### lua-plugins
+
+<br/>
+
+<PluginInfo 
+    lang='lua'
+    repo='opq-osc/lua-plugins'
+    owner='spirit1431007'
+/>
+
+适用于OPQBOT的一系列lua插件
+
+### LuaPlugins
+
+<br/>
+
+<PluginInfo 
+    lang='lua'
+    repo='opq-osc/LuaPlugins'
+    owner='4490'
+/>
+
+IOTQQ -- Lua插件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
