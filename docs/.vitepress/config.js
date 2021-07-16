@@ -3,6 +3,10 @@ const owner = 'opq-osc'
 const address = `${owner}/${repo}`
 const lang = 'zh-CN'
 
+const botMainRepo = 'OPQ'
+const botMainAdress = `${owner}/${botMainRepo}`
+const botMainUrl = `https://github.com/${botMainAdress}`
+
 const isDev = process.env.NODE_ENV === 'development'
 
 const head = [
@@ -32,16 +36,8 @@ module.exports = {
   lang,
   head,
   themeConfig: {
-    // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+    // 这个选项指向了 doc 的 repo，suggest 按钮会从这个 repo 获取链接
     repo: address,
-    // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
-    // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-    repoLabel: 'Github',
-
-    // 以下为可选的编辑链接选项
-
-    // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: address,
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
@@ -74,6 +70,10 @@ module.exports = {
       {
         text: 'About',
         link: '/other/join',
+      },
+      {
+        text: 'Github',
+        link: botMainUrl,
       },
     ],
 
