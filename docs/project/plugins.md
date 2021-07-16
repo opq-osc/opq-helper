@@ -52,6 +52,30 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 
 一个适用于OPQBOT 的识图姬
 
+### OPQ-netDisk
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/OPQ-netDisk'
+    owner='HeiLAAS'
+/>
+
+使用腾讯COS服务作为OPQ机器人的网盘，模糊搜索腾讯COS并上传在群文件中的工具
+
+### bbb_bot
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bbb_bot'
+    owner='BrandTime'
+/>
+
+BBB_Bot(棒棒冰) - based on OPQBot
+
 ## Go
 
 ### OPQBot-GroupManager
