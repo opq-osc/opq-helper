@@ -7,6 +7,8 @@ const botMainRepo = 'OPQ'
 const botMainAdress = `${owner}/${botMainRepo}`
 const botMainUrl = `https://github.com/${botMainAdress}`
 
+const gatewayUrl = `https://opqbot.com`
+
 const isDev = process.env.NODE_ENV === 'development'
 
 const head = [
@@ -70,6 +72,10 @@ module.exports = {
       {
         text: 'About',
         link: '/other/join',
+      },
+      {
+        text: 'Gateway',
+        link: gatewayUrl
       },
       {
         text: 'Github',
