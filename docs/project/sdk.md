@@ -27,6 +27,10 @@ IOTBOT，Nodejs版
 
 IOT Bot Structure For Enterprise Developer
 
+### [YukinoshitaBot.OPQ](https://github.com/opq-osc/YukinoshitaBot.OPQ)
+
+A c#/.net sdk for OPQ bot
+
 ### [OPQBot-Native](https://github.com/opq-osc/OPQBot-Native)
 
 OPQBot 酷Q插件 兼容框架
