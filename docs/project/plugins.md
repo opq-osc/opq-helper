@@ -76,6 +76,30 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 
 BBB_Bot(棒棒冰) - based on OPQBot
 
+### authMS
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/authMS'
+    owner='HeiLAAS'
+/>
+
+机器人充值管理系统
+
+### OPQ-netDisk
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/OPQ-netDisk'
+    owner='HeiLAAS'
+/>
+
+使用腾讯COS服务作为OPQ机器人的网盘，模糊搜索腾讯COS并上传在群文件中
+
 ## Go
 
 ### OPQBot-GroupManager
@@ -111,7 +135,7 @@ opqosc/OPQBot 的查梗插件
 <PluginInfo 
     lang='JavaScript'
     repo='opq-osc/OPQ-NodeJs'
-    owner='4490'
+    owner='XJLZ'
 />
 
 OPQ-NodeJs
@@ -149,7 +173,7 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 <PluginInfo 
     lang='lua'
     repo='opq-osc/LuaPlugins'
-    owner='4490'
+    owner='XJLZ'
 />
 
 IOTQQ -- Lua插件
