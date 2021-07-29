@@ -34,3 +34,9 @@ A c#/.net sdk for OPQ bot
 ### [OPQBot-Native](https://github.com/opq-osc/OPQBot-Native)
 
 OPQBot 酷Q插件 兼容框架
+
+## Lua
+
+### [lua-lib](https://github.com/opq-osc/lua-lib)
+
+进一步封装 OPQ 的 lua api，调用更统一，简化开发，去除插件冗余代码, 免受 OPQ wiki 的困扰
