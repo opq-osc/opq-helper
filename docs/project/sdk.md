@@ -17,9 +17,9 @@ OPQ/IOTQQ/IOTBot的一个Python开发助手🐌
 
 ## Javascript
 
-### [IOTBOT-Node.js](https://github.com/opq-osc/IOTBOT-Node.js)
+### [OPQ-NodeJs](https://github.com/opq-osc/OPQ-NodeJs)
 
-IOTBOT，Nodejs版
+OPQ-NodeJs
 
 ## C#
 

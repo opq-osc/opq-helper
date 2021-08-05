@@ -126,20 +126,6 @@ OPQBot 群管理机器人
 
 opqosc/OPQBot 的查梗插件
 
-## Javascript
-
-### OPQ-NodeJs
-
-<br/>
-
-<PluginInfo 
-    lang='JavaScript'
-    repo='opq-osc/OPQ-NodeJs'
-    owner='XJLZ'
-/>
-
-OPQ-NodeJs
-
 ## Lua
 
 ### IOTQQ_Plugins
