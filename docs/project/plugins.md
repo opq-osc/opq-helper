@@ -164,6 +164,18 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 IOTQQ -- Lua插件
 
+### lua-plugins-using-lua-lib
+
+<br/>
+
+<PluginInfo 
+    lang='lua'
+    repo='opq-osc/lua-plugins-using-lua-lib'
+    owner='xiyaowong'
+/>
+
+使用lua-lib的小插件
+
 
 
 

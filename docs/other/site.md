@@ -8,12 +8,6 @@
 
 ## 站点一览
 
-### OPQBot Wiki
-
-<br />
-
-<PluginInfo owner="mcoo" :customLink="['Domain', 'go.opqbot.com']" />
-
 ### OPQ Helper
 
 <br />
