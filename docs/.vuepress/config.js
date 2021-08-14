@@ -40,6 +40,7 @@ module.exports = {
   themeConfig: {
     // 这个选项指向了 doc 的 repo，suggest 按钮会从这个 repo 获取链接
     repo: address,
+
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
@@ -66,8 +67,12 @@ module.exports = {
         text: 'Other',
         items: [
           { text: '相关站点', link: '/other/site' },
-          { text: 'OPQ Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' },
+          // { text: '相关站点', link: '/opq-wiki/安装指南' },
         ],
+      },
+      {
+        text: 'Wiki',
+        link: '/opq-wiki/_Sidebar'
       },
       {
         text: 'About',
@@ -86,5 +91,16 @@ module.exports = {
     sidebar: 'auto',
     lastUpdated: '上次更新',
     smoothScroll: true,
+    search: false,
   },
+  plugins: [
+    '@vuepress/back-to-top',
+    [
+      'vuepress-plugin-zooming',
+      {
+        selector: '.my-img',
+        delay: 1000
+      },
+    ]
+  ],
 }

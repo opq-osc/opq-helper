@@ -1,9 +1,0 @@
-.home-hero .image {
-    border-radius: 50%;
-}
-
-/* 隐藏掉默认的 Github 链接 */
-/* 在 theme 内部 NavLinks 里 useRepo() 默认先获取了 docsRepo 作为 link，所以必须自定义这个 link */
-.nav .nav-links div.item:last-child {
-    display: none;
-}

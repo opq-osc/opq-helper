@@ -1,0 +1,4 @@
+[submodule "docs/opq-wiki"]
+	path = docs/opq-wiki
+	url = https://github.com/opq-osc/OPQ.wiki.git
+	branch = master

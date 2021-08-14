@@ -12,7 +12,6 @@
 
 <script>
 export default {
-  setup() {},
   props: {
     link: String,
     name: String,
