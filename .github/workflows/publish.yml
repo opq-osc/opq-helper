@@ -22,7 +22,7 @@ jobs:
         run: |
           yarn
           yarn run build
-          cp docs/.vitepress/dist/index.html docs/.vitepress/dist/404.html
+          cp docs/.vuepress/dist/index.html docs/.vuepress/dist/404.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
