@@ -95,6 +95,7 @@ export default {
   .owner {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     user-select: none;
     cursor: pointer;
     border-radius: 5px;
