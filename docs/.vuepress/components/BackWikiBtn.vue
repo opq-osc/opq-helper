@@ -1,5 +1,5 @@
 <template>
-  <a href="/opq-wiki/_Sidebar.html" class="back">← 返回 OPQ Wiki 目录</a>
+  <router-link to="/opq-wiki/_Sidebar.html" class="back">← 返回 OPQ Wiki 目录</router-link>
 </template>
 
 <script>
