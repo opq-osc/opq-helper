@@ -72,7 +72,10 @@ module.exports = {
       },
       {
         text: 'Wiki',
-        link: '/opq-wiki/_Sidebar'
+        items: [
+          { text: 'OPQ Wiki', link: '/opq-wiki/_Sidebar' },
+          { text: 'OPQBot-GroupManage Wiki', link: '/opq-manager-wiki/_Sidebar' },
+        ]
       },
       {
         text: 'About',

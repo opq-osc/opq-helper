@@ -1,9 +1,13 @@
 <template>
-  <router-link to="/opq-wiki/_Sidebar.html" class="back">← 返回 OPQ Wiki 目录</router-link>
+  <router-link :to="`/${id}/_Sidebar.html`" class="back">← 返回 Wiki 目录</router-link>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    id: String
+  }
+}
 </script>
 
 <style lang="scss" scoped>

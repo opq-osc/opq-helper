@@ -4,23 +4,29 @@ const chalk = require('chalk')
 
 const { pathchLog } = require('./log')
 
-const submoduleSidebarFilePath = path.resolve(
-  __dirname,
-  '../docs/opq-wiki/_Sidebar.md'
-)
-const sidebarCurrentDir = path.dirname(submoduleSidebarFilePath)
+const submoduleSidebarFilesPath = [
+  {
+    path: path.resolve(__dirname, '../docs/opq-wiki/_Sidebar.md'),
+    replace: 'https://github.com/OPQBOT/OPQ/wiki'
+  },
+  {
+    path: path.resolve(__dirname, '../docs/opq-manager-wiki/_Sidebar.md'),
+    replace: 'https://github.com/opq-osc/OPQBot-GroupManager/wiki'
+  },
+]
 
 /**
  * auto patch 逻辑
  * 1.会把绝对 url 连接换为相对 md 链接
  * 2 给子页面添加返回按钮
  */
-function convertWikiSidebarLinkToInternal() {
+function convertWikiCore(sidebarFilePath, replaceContent) {
+  const sidebarCurrentDir = path.dirname(sidebarFilePath)
   // 把连接换成相对的
-  const content = fs.readFileSync(submoduleSidebarFilePath, 'utf-8')
+  const content = fs.readFileSync(sidebarFilePath, 'utf-8')
   const willConvert = [
     {
-      before: 'https://github.com/OPQBOT/OPQ/wiki',
+      before: replaceContent, // 'https://github.com/OPQBOT/OPQ/wiki'
       after: '.',
     },
   ]
@@ -48,7 +54,7 @@ function convertWikiSidebarLinkToInternal() {
     filteredLines.push(line)
   })
   newContent = filteredLines.join('\n')
-  fs.writeFileSync(submoduleSidebarFilePath, newContent)
+  fs.writeFileSync(sidebarFilePath, newContent)
   pathchLog(chalk.green('👍 无效 link 已去除'))
 
   // 把其他文件头处理下，并加上返回按钮
@@ -56,18 +62,18 @@ function convertWikiSidebarLinkToInternal() {
   const filenames = fs.readdirSync(sidebarCurrentDir)
   filenames.forEach((filename) => {
     const filePath = path.join(sidebarCurrentDir, filename)
-    if (filePath === submoduleSidebarFilePath) {
+    if (filePath === sidebarFilePath) {
       return
     }
     const mdContent = fs.readFileSync(filePath, 'utf-8')
     let newMdContent = mdContent
-    if (!newMdContent.includes('<BackWikiBtn />')) {
+    if (!newMdContent.includes('<BackWikiBtn')) {
       newMdContent = `
 ---
 sidebar: false
 ---
 
-<BackWikiBtn />
+<BackWikiBtn id="${path.basename(sidebarCurrentDir)}" />
 
 ${newMdContent}
   `
@@ -77,8 +83,18 @@ ${newMdContent}
   pathchLog(chalk.green('👍 子页面模板代码已附加完毕'))
 }
 
+const convertWikiSidebarLinkToInternal = () => {
+  
+  submoduleSidebarFilesPath.forEach(({ path: filePath, replace }) => {
+    const submoduleName = path.basename(path.dirname(filePath))
+    pathchLog(chalk.yellow(`🍵 开始 patch submodule: ${submoduleName}`))
+    convertWikiCore(filePath, replace)
+    pathchLog(chalk.green(`👍 submodule patch 完毕: ${submoduleName}`))
+  })
+
+}
+
 module.exports = {
   convertWikiSidebarLinkToInternal,
-  submoduleSidebarFilePath,
-  sidebarCurrentDir,
+  submoduleSidebarFilesPath,
 }
