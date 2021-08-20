@@ -13,6 +13,10 @@ const submoduleSidebarFilesPath = [
     path: path.resolve(__dirname, '../docs/opq-manager-wiki/_Sidebar.md'),
     replace: 'https://github.com/opq-osc/OPQBot-GroupManager/wiki'
   },
+  {
+    path: path.resolve(__dirname, '../docs/opq-setu-wiki/_Sidebar.md'),
+    replace: 'https://github.com/yuban10703/OPQ-SetuBot/wiki'
+  }
 ]
 
 /**

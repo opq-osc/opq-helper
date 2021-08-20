@@ -6,3 +6,7 @@
 	path = docs/opq-manager-wiki
 	url = https://github.com/opq-osc/OPQBot-GroupManager.wiki.git
 	branch = master
+[submodule "docs/opq-setu-wiki"]
+	path = docs/opq-setu-wiki
+	url = https://github.com/opq-osc/OPQ-SetuBot.wiki.git
+	branch = master
