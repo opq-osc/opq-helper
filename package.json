@@ -10,7 +10,7 @@
     "build": "node ./scripts/build.js",
     "serve": "serve ./docs/.vuepress/dist",
     "submodule:init": "git submodule update --init --recursive",
-    "submodule:update": "git submodule update --remote"
+    "submodule:update": "git submodule update --remote --recursive"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",
