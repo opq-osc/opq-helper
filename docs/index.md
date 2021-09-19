@@ -18,4 +18,6 @@ footer: MIT Licensed | Copyright © 2021 - OPQ Open Source Community
 
 <IndexMounted />
 
-<MicroApp />
+<ClientOnly>
+  <MicroApp />
+</ClientOnly>
