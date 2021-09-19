@@ -26,5 +26,8 @@
     "serve": "^12.0.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-zooming": "^1.1.8"
+  },
+  "dependencies": {
+    "qiankun": "^2.5.0"
   }
 }
