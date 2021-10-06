@@ -8,17 +8,25 @@
 
 ## 站点一览
 
-### OPQ Helper
+### www / @
 
-<br />
+OPQ 主站
+
+<PluginInfo owner="fz6m" :customLink="['Domain', 'opqbot.com']" />
+
+### docs
+
+OPQ Helper 文档站
 
 <PluginInfo owner="fz6m" :customLink="['Domain', 'docs.opqbot.com']" />
 
-### OPQ Homepage
+### doc
 
-<br />
+`doc.opqbot.com` 会被重定向到 `docs.opqbot.com`
 
-<PluginInfo owner="fz6m" :customLink="['Domain', 'opqbot.com']" />
+### botoy
+
+`botoy.opqbot.com` 会被重定向到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
 
 <br />
 
