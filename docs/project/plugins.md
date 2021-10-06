@@ -100,6 +100,56 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 使用腾讯COS服务作为OPQ机器人的网盘，模糊搜索腾讯COS并上传在群文件中
 
+### o0oo00oo00oo0oo0
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/o0oo00oo00oo0oo0'
+    owner='Teeoo'
+/>
+
+词云插件/斗地主插件/扫雷插件
+
+### login
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/login'
+    owner='xiyaowong'
+/>
+
+终端打印登录二维码
+
+### bot_change_avatar
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_change_avatar'
+    owner='xiyaowong'
+/>
+
+生成头像，国旗头像
+
+### botoy_word_cloud
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/botoy_word_cloud'
+    owner='yuban10703'
+/>
+
+词云
+
+
+
 ## Go
 
 ### OPQBot-GroupManager
@@ -175,6 +225,20 @@ IOTQQ -- Lua插件
 />
 
 使用lua-lib的小插件
+
+## PHP
+
+### OPQ-PHP-plugins
+
+<br/>
+
+<PluginInfo 
+    lang='php'
+    repo='opq-osc//OPQ-PHP-plugins'
+    owner='xuxiaofen2'
+/>
+
+OPQ PHP 插件
 
 
 
