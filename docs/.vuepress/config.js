@@ -53,7 +53,10 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        items: [{ text: '从零开始搭建 OPQBot', link: '/guide/manual' }],
+        items: [
+          { text: '从零开始搭建 OPQBot', link: '/guide/manual' },
+          { text: '进阶预设实践', link: '/guide/yyy-preset' },
+        ],
       },
       {
         text: 'Project',
