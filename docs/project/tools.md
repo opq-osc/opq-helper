@@ -10,3 +10,6 @@ opqbot面板
 
 an EOC IOT Update Program :: Easy(ily) OpenSource CrossPlatfrom
 
+## [IPTrackerServer](https://github.com/opq-osc/IPTrackerServer)
+
+用于窥屏检测的服务端

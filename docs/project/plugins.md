@@ -14,7 +14,7 @@
     owner='xiyaowong'
 />
 
-一些botoy的插件
+一些 botoy 的插件
 
 ### OPQ-SetuBot
 
@@ -26,7 +26,7 @@
     owner='yuban10703'
 />
 
-OPQBOT的色图机器人插件
+OPQBOT 的色图机器人插件
 
 ### opqqq-plugin
 
@@ -50,7 +50,7 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
     owner='kitUIN'
 />
 
-一个适用于OPQBOT 的识图姬
+一个适用于 OPQBOT 的识图姬
 
 ### OPQ-netDisk
 
@@ -62,7 +62,7 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
     owner='HeiLAAS'
 />
 
-使用腾讯COS服务作为OPQ机器人的网盘，模糊搜索腾讯COS并上传在群文件中的工具
+使用腾讯 COS 服务作为 OPQ 机器人的网盘，模糊搜索腾讯 COS 并上传在群文件中的工具
 
 ### bbb_bot
 
@@ -98,7 +98,7 @@ BBB_Bot(棒棒冰) - based on OPQBot
     owner='HeiLAAS'
 />
 
-使用腾讯COS服务作为OPQ机器人的网盘，模糊搜索腾讯COS并上传在群文件中
+使用腾讯 COS 服务作为 OPQ 机器人的网盘，模糊搜索腾讯 COS 并上传在群文件中
 
 ### o0oo00oo00oo0oo0
 
@@ -148,7 +148,53 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 词云
 
+### bot_sese_flf
 
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_sese_flf'
+    owner='fz6m'
+/>
+
+【典】不可以涩涩插件，生成敲敲图。（我就要涩涩 / 看别人敲我也敲）
+
+### bot_sio_transfer
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_sio_transfer'
+    owner='fz6m'
+/>
+
+SocketIO 转发台，保持 botoy 能力和插件功能的同时，透传其接口，以此使用更灵活、生态更好的技术进行开发
+
+### bot_bili_vtbs
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_bili_vtbs'
+    owner='xiyaowong'
+/>
+
+botoy 插件：查看 B 站关注了多少虚拟主播
+
+### botoy_netease_music
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/botoy_netease_music'
+    owner='yuban10703'
+/>
+
+网易云的点歌
 
 ## Go
 
@@ -200,7 +246,7 @@ IOTQQ 机器人 LuaPlugins 插件仓库
     owner='spirit1431007'
 />
 
-适用于OPQBOT的一系列lua插件
+适用于 OPQBOT 的一系列 lua 插件
 
 ### LuaPlugins
 
@@ -212,7 +258,7 @@ IOTQQ 机器人 LuaPlugins 插件仓库
     owner='XJLZ'
 />
 
-IOTQQ -- Lua插件
+IOTQQ -- Lua 插件
 
 ### lua-plugins-using-lua-lib
 
@@ -224,7 +270,7 @@ IOTQQ -- Lua插件
     owner='xiyaowong'
 />
 
-使用lua-lib的小插件
+使用 lua-lib 的小插件
 
 ## PHP
 
@@ -240,17 +286,16 @@ IOTQQ -- Lua插件
 
 OPQ PHP 插件
 
+## Node
 
+### sio-yyy
 
+<br/>
 
+<PluginInfo 
+    lang='php'
+    repo='opq-osc/sio-yyy'
+    owner='fz6m'
+/>
 
-
-
-
-
-
-
-
-
-
-
+SocketIO 转发台实践，支持番剧推送、熬夜冠军。
