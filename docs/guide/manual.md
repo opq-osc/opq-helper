@@ -5,9 +5,7 @@
 你可以从 [OPQ](https://github.com/opq-osc/OPQ) 官方项目等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行（或者 centos ）。
 
 附：
- - 最新版 opq 运行包（不一定实时更新）：[OPQBot_6.0.18_linux_amd64.tar.gz](https://files.gitter.im/5f27939ed73408ce4feb3112/zMQB/OPQBot_6.0.18_linux_amd64.tar.gz)
-
- - jsdelivr 加速镜像仓库 [xiyaowong / iotbot--mirror](https://github.com/xiyaowong/iotbot--mirror)，会使用 jsdelivr 的可以在此处加速下载
+ - 最新版 opq 运行包（不一定实时更新）：[OPQBot_6.7.5_linux_amd64.tar.gz](https://github.com/opq-osc/OPQ/releases/download/v6.7.5/OPQBot_6.7.5_linux_amd64.tar.gz)
 
  - 树莓派版本请自行寻找
 

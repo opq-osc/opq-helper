@@ -241,7 +241,7 @@ opqosc/OPQBot 的查梗插件
 <br/>
 
 <PluginInfo 
-    lang='golang'
+    lang='c#'
     repo='opq-osc/GenshinBot'
     owner='AZhrZho'
 />
@@ -319,7 +319,7 @@ OPQ PHP 插件
 <br/>
 
 <PluginInfo 
-    lang='php'
+    lang='javascript'
     repo='opq-osc/sio-yyy'
     owner='fz6m'
 />
