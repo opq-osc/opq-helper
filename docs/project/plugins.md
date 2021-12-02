@@ -196,6 +196,18 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 网易云的点歌
 
+### botoy-QQorder
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/botoy-QQorder'
+    owner='HYLnP'
+/>
+
+基于 OPQ/botoy 的 qq 机器人指令配置 (基于 botoy 的制定指令和日记功能)
+
 ## Go
 
 ### OPQBot-GroupManager
@@ -221,6 +233,20 @@ OPQBot 群管理机器人
 />
 
 opqosc/OPQBot 的查梗插件
+
+## C#
+
+### GenshinBot
+
+<br/>
+
+<PluginInfo 
+    lang='golang'
+    repo='opq-osc/GenshinBot'
+    owner='AZhrZho'
+/>
+
+原神 QQ 机器人，基于 OPQ。提供原神游戏角色查询、每日任务及树脂提醒、个人深渊战绩查询、世界探索信息查询等功能。
 
 ## Lua
 
