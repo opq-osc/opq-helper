@@ -26,7 +26,44 @@ OPQ Helper 文档站
 
 ### botoy
 
-`botoy.opqbot.com` 会被重定向到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
+`botoy.opqbot.com` CNAME 到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
 
 <br />
 
+## FE Resource
+
+### opqbot-homepage
+
+<br/>
+
+<PluginInfo 
+    lang='React+Typescript'
+    repo='opq-osc/opqbot-homepage'
+    owner='fz6m'
+/>
+
+主站
+
+### opq-helper
+
+<br/>
+
+<PluginInfo 
+    lang='Markdown+Vue'
+    repo='opq-osc/opq-helper'
+    owner='fz6m'
+/>
+
+文档站
+
+### opqbot-notify
+
+<br/>
+
+<PluginInfo 
+    lang='React+Typescript'
+    repo='opq-osc/opqbot-notify'
+    owner='fz6m'
+/>
+
+通知中心
