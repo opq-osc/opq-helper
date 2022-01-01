@@ -208,6 +208,18 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 基于 OPQ/botoy 的 qq 机器人指令配置 (基于 botoy 的制定指令和日记功能)
 
+### bot_QQorder
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_QQorder'
+    owner='HeiLAAS'
+/>
+
+基于botoy的制定指令和日记功能;既插件版的QQorder。
+
 ## Go
 
 ### OPQBot-GroupManager

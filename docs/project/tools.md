@@ -17,3 +17,9 @@ an EOC IOT Update Program :: Easy(ily) OpenSource CrossPlatfrom
 ## [SkiaRenderServer](https://github.com/opq-osc/SkiaRenderServer)
 
 利用类似 xml 的标记语言生成图片，提供 HTTP 接口。
+
+## [OPQBot-Docker](https://github.com/opq-osc/OPQBot-Docker)
+
+OPQBot docker image
+
+
