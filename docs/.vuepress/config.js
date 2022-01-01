@@ -70,6 +70,7 @@ module.exports = {
         text: 'Other',
         items: [
           { text: '相关站点', link: '/other/site' },
+          { text: 'OPQ 哲学', link: '/other/philosophy' },
           // { text: '相关站点', link: '/opq-wiki/安装指南' },
         ],
       },
