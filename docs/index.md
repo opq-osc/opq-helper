@@ -1,7 +1,7 @@
 ---
 home: true
 
-heroImage: /avatar.jpeg
+heroImage: /opq.600.jpg
 actionText: Get Started →
 actionLink: /guide/manual
 
