@@ -35,7 +35,7 @@ OPQBOT 的色图机器人插件
 <PluginInfo 
     lang='python'
     repo='opq-osc/opqqq-plugin'
-    owner='fz6m'
+    owner='HeiLAAS'
 />
 
 OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 运势等
