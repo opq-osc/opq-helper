@@ -12,13 +12,13 @@
 
 OPQ 主站
 
-<PluginInfo owner="fz6m" :customLink="['Domain', 'opqbot.com']" />
+<PluginInfo owner="spirit1431007" :customLink="['Domain', 'opqbot.com']" />
 
 ### docs
 
 OPQ Helper 文档站
 
-<PluginInfo owner="fz6m" :customLink="['Domain', 'docs.opqbot.com']" />
+<PluginInfo owner="spirit1431007" :customLink="['Domain', 'docs.opqbot.com']" />
 
 ### doc
 
@@ -39,7 +39,7 @@ OPQ Helper 文档站
 <PluginInfo 
     lang='React+Typescript'
     repo='opq-osc/opqbot-homepage'
-    owner='fz6m'
+    owner='spirit1431007'
 />
 
 主站
@@ -51,7 +51,7 @@ OPQ Helper 文档站
 <PluginInfo 
     lang='Markdown+Vue'
     repo='opq-osc/opq-helper'
-    owner='fz6m'
+    owner='spirit1431007'
 />
 
 文档站
@@ -63,7 +63,7 @@ OPQ Helper 文档站
 <PluginInfo 
     lang='React+Typescript'
     repo='opq-osc/opqbot-notify'
-    owner='fz6m'
+    owner='spirit1431007'
 />
 
 通知中心
