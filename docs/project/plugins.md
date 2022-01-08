@@ -148,30 +148,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 词云
 
-### bot_sese_flf
-
-<br/>
-
-<PluginInfo 
-    lang='python'
-    repo='opq-osc/bot_sese_flf'
-    owner='fz6m'
-/>
-
-【典】不可以涩涩插件，生成敲敲图。（我就要涩涩 / 看别人敲我也敲）
-
-### bot_sio_transfer
-
-<br/>
-
-<PluginInfo 
-    lang='python'
-    repo='opq-osc/bot_sio_transfer'
-    owner='fz6m'
-/>
-
-SocketIO 转发台，保持 botoy 能力和插件功能的同时，透传其接口，以此使用更灵活、生态更好的技术进行开发
-
 ### bot_bili_vtbs
 
 <br/>
@@ -324,16 +300,3 @@ IOTQQ -- Lua 插件
 
 OPQ PHP 插件
 
-## Node
-
-### sio-yyy
-
-<br/>
-
-<PluginInfo 
-    lang='javascript'
-    repo='opq-osc/sio-yyy'
-    owner='fz6m'
-/>
-
-SocketIO 转发台实践，支持番剧推送、熬夜冠军。

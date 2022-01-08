@@ -17,15 +17,6 @@ const submoduleSidebarFilesPath = [
     path: path.resolve(__dirname, '../docs/opq-setu-wiki/_Sidebar.md'),
     replace: 'https://github.com/yuban10703/OPQ-SetuBot/wiki'
   },
-  {
-    path: path.resolve(__dirname, '../docs/opq-yyy-preset/README.md'),
-    // support custom build before action
-    action: () => {
-      const source = path.resolve(__dirname, '../docs/opq-yyy-preset/README.md')
-      const dest = path.resolve(__dirname, '../docs/guide/yyy-preset.md')
-      fs.copyFileSync(source, dest)
-    }
-  },
 ]
 
 /**
