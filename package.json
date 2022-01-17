@@ -28,6 +28,7 @@
     "vuepress-plugin-zooming": "^1.1.8"
   },
   "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.9.5",
     "qiankun": "^2.5.0"
   }
 }

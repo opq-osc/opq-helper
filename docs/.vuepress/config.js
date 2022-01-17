@@ -13,22 +13,6 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const head = [
   ['link', { rel: 'icon', href: '/favicon.png' }],
-  !isDev && [
-    'script',
-    {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-F5CQE58D3F',
-      async: true,
-    },
-  ],
-  !isDev && [
-    'script',
-    {},
-    `window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-F5CQE58D3F');`,
-  ],
 ].filter(Boolean)
 
 module.exports = {
@@ -108,6 +92,12 @@ module.exports = {
         selector: '.my-img',
         delay: 1000
       },
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'G-F5CQE58D3F'
+      }
     ]
   ],
 }
