@@ -13,7 +13,7 @@ features:
   - title: 🌈 Enrich open source
     details: 极低成本即可享受开源社区丰富的插件和功能
 
-footer: MIT Licensed | Copyright © 2021 - OPQ Open Source Community
+footer: MIT Licensed | Copyright © 2022 - OPQ Open Source Community
 ---
 
 <IndexMounted />
