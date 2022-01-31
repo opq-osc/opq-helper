@@ -196,6 +196,18 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 基于botoy的制定指令和日记功能;既插件版的QQorder。
 
+### bot_exhentai
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_exhentai'
+    owner='yuban10703'
+/>
+
+No description
+
 ## Go
 
 ### OPQBot-GroupManager
@@ -221,6 +233,18 @@ OPQBot 群管理机器人
 />
 
 opqosc/OPQBot 的查梗插件
+
+### OPQPlugin
+
+<br/>
+
+<PluginInfo 
+    lang='golang'
+    repo='opq-osc/OPQPlugin'
+    owner='mcoo'
+/>
+
+golang OPQBot插件
 
 ## C#
 
