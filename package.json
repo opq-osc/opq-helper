@@ -15,7 +15,6 @@
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",
     "@types/lodash": "^4.14.172",
-    "@vuepress/plugin-back-to-top": "^1.8.2",
     "chalk": "^4.1.2",
     "cross-env": "^7.0.3",
     "execa": "^5.1.1",
@@ -24,11 +23,13 @@
     "sass": "^1.34.1",
     "sass-loader": "^10.1.1",
     "serve": "^12.0.0",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-zooming": "^1.1.8"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.9.5",
-    "qiankun": "^2.5.0"
+    "qiankun": "^2.5.0",
+    "vuepress-plugin-cursor-effects": "^1.1.2",
+    "vuepress-plugin-zooming": "^1.1.8",
+    "@vuepress/plugin-back-to-top": "^1.8.2"
   }
 }

@@ -910,6 +910,27 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@moefy-canvas/core@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.npmmirror.com/@moefy-canvas/core/-/core-0.3.0.tgz#09ad70e51b20729441b381ab1ac9ccdb31002ae5"
+  integrity sha512-ZWE78QcK4fU3badHXLPQLcORU23b4SQtJFWtHHoXIl8qSxNVmLUUCmGnJ85Rg52/uAMbedZNi/kIIF4fu8I4Pg==
+
+"@moefy-canvas/theme-popper@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.npmmirror.com/@moefy-canvas/theme-popper/-/theme-popper-0.3.0.tgz#49ea9b935703f2cadf5a758bcf5f0f6efdfa3650"
+  integrity sha512-p3KGs/RqCO47oD9mvn3HdTPcVhoyGUOqVyT/vXNBDXLEA/t14RW0a4lhjY6iKNisM23BVQNwjIxZBZrdkBnAUQ==
+  dependencies:
+    "@moefy-canvas/core" "^0.3.0"
+    "@moefy-canvas/utils" "^0.3.0"
+    ts-debounce "^4.0.0"
+
+"@moefy-canvas/utils@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.npmmirror.com/@moefy-canvas/utils/-/utils-0.3.0.tgz#882836c028164953d4c6d284754d8242159b1495"
+  integrity sha512-dsdYvQKZg16yd+cvFDtL4zu8lPDJbHYcVBxMR4/MY+N/hSsMF8PMH04cE4szYstoZHrlLBZcB2cZEoxGas5PKw==
+  dependencies:
+    "@moefy-canvas/core" "^0.3.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npmmirror.com/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -7965,6 +7986,11 @@ tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
+ts-debounce@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/ts-debounce/-/ts-debounce-4.0.0.tgz#33440ef64fab53793c3d546a8ca6ae539ec15841"
+  integrity sha512-+1iDGY6NmOGidq7i7xZGA4cm8DAa6fqdYcvO5Z6yBevH++Bdo9Qt/mN0TzHUgcCcKv1gmh9+W5dHqz8pMWbCbg==
+
 tslib@^1.10.0:
   version "1.14.1"
   resolved "https://registry.npmmirror.com/tslib/download/tslib-1.14.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
@@ -8375,6 +8401,13 @@ vuepress-plugin-container@^2.0.2:
   dependencies:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
+
+vuepress-plugin-cursor-effects@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-cursor-effects/-/vuepress-plugin-cursor-effects-1.1.2.tgz#9df2a08106b58d06f6d41b99b5ba600f332586fe"
+  integrity sha512-xzVn55AhSFEL3rXtS3nm6r+ICAc/XktgTIFaYft9DrY5/3nDrwsPsYbKXcAsXbHgkpLRekuuE6LXMPnraSJOBQ==
+  dependencies:
+    "@moefy-canvas/theme-popper" "^0.3.0"
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"

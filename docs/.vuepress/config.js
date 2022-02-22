@@ -9,11 +9,9 @@ const botMainUrl = `https://github.com/${botMainAdress}`
 
 const gatewayUrl = `https://opqbot.com`
 
-const isDev = process.env.NODE_ENV === 'development'
+// const isDev = process.env.NODE_ENV === 'development'
 
-const head = [
-  ['link', { rel: 'icon', href: '/favicon.png' }],
-].filter(Boolean)
+const head = [['link', { rel: 'icon', href: '/favicon.png' }]].filter(Boolean)
 
 module.exports = {
   title: 'OPQ Helper',
@@ -37,9 +35,7 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        items: [
-          { text: '从零开始搭建 OPQBot', link: '/guide/manual' },
-        ],
+        items: [{ text: '从零开始搭建 OPQBot', link: '/guide/manual' }],
       },
       {
         text: 'Project',
@@ -61,9 +57,12 @@ module.exports = {
         text: 'Wiki',
         items: [
           { text: 'OPQ Wiki', link: '/opq-wiki/_Sidebar' },
-          { text: 'OPQBot-GroupManage Wiki', link: '/opq-manager-wiki/_Sidebar' },
+          {
+            text: 'OPQBot-GroupManage Wiki',
+            link: '/opq-manager-wiki/_Sidebar',
+          },
           { text: 'OPQ-SetuBot Wiki', link: '/opq-setu-wiki/_Sidebar' },
-        ]
+        ],
       },
       {
         text: 'About',
@@ -71,7 +70,7 @@ module.exports = {
       },
       {
         text: 'Gateway',
-        link: gatewayUrl
+        link: gatewayUrl,
       },
       {
         text: 'Github',
@@ -90,14 +89,15 @@ module.exports = {
       'vuepress-plugin-zooming',
       {
         selector: '.my-img',
-        delay: 1000
+        delay: 1000,
       },
     ],
     [
       '@vuepress/google-analytics',
       {
-        ga: 'G-F5CQE58D3F'
-      }
-    ]
+        ga: 'G-F5CQE58D3F',
+      },
+    ],
+    ['cursor-effects'],
   ],
 }
