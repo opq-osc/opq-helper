@@ -85,6 +85,9 @@ ${newMdContent}
     fs.writeFileSync(filePath, newMdContent.trimStart())
   })
   pathchLog(chalk.green('👍 子页面模板代码已附加完毕'))
+
+  // remove `.git` , otherwise git will fail to commit
+  fs.removeSync(path.join(sidebarCurrentDir, '.git'))
 }
 
 const convertWikiSidebarLinkToInternal = () => {
