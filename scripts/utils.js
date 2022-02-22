@@ -25,6 +25,8 @@ async function testSubmodule() {
     if (!isSubmoduleExist) {
       // 初始化 submodule
       execa.commandSync('yarn submodule:init', { stdio: 'inherit' })
+      // update submodule
+      execa.commandSync('yarn submodule:update', { stdio: 'inherit' })
     }
   }
   submoduleSidebarFilesPath.forEach(({ path: filePath }) => {
