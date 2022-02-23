@@ -206,7 +206,44 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='yuban10703'
 />
 
-No description
+基于botoy和OPQBot的本子机器人，一个用来下载exhentai里本子的插件
+
+### bot_yaowoyizhi
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_yaowoyizhi'
+    owner='xiyaowong'
+/>
+
+要我一直img吗
+
+### opq_reply_engine
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/opq_reply_engine'
+    owner='LukWang'
+/>
+
+一个OPQ的回复和插件管理模块，OPQBOT的回复管理引擎
+
+### bot_emojimix
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_emojimix'
+    owner='xiyaowong'
+/>
+
+botoy插件，emoji合成
+
 
 ## Go
 
