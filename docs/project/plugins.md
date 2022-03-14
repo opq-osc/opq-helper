@@ -244,6 +244,78 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 botoy插件，emoji合成
 
+### botoy-plugin-template
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/botoy-plugin-template'
+    owner='xiyaowong'
+/>
+
+botoy 插件模板
+
+### bot_antiasoul
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_antiasoul'
+    owner='xiyaowong'
+/>
+
+botoy插件，用于恶心嘉心糖
+
+### bot_translation
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_translation'
+    owner='yuban10703'
+/>
+
+botoy的翻译小插件
+
+### botoy-plugin-petpet
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/botoy-plugin-petpet'
+    owner='xiyaowong'
+/>
+
+making some fun pictures
+
+### bot_filespy
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_filespy'
+    owner='HYLnP'
+/>
+
+botoy插件：监听群文件上传消息，并转发详细内容
+
+### bot_remotechat
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_remotechat'
+    owner='HYLnP'
+/>
+
+主人直接通过机器人进行聊天，群员通过艾特机器人和主人聊天
+
 
 ## Go
 
