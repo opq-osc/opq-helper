@@ -194,7 +194,7 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='HeiLAAS'
 />
 
-基于botoy的制定指令和日记功能;既插件版的QQorder。
+基于 botoy 的制定指令和日记功能;既插件版的 QQorder。
 
 ### bot_exhentai
 
@@ -206,7 +206,7 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='yuban10703'
 />
 
-基于botoy和OPQBot的本子机器人，一个用来下载exhentai里本子的插件
+基于 botoy 和 OPQBot 的本子机器人，一个用来下载 exhentai 里本子的插件
 
 ### bot_yaowoyizhi
 
@@ -218,7 +218,7 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='xiyaowong'
 />
 
-要我一直img吗
+要我一直 img 吗
 
 ### opq_reply_engine
 
@@ -230,7 +230,7 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='LukWang'
 />
 
-一个OPQ的回复和插件管理模块，OPQBOT的回复管理引擎
+一个 OPQ 的回复和插件管理模块，OPQBOT 的回复管理引擎
 
 ### bot_emojimix
 
@@ -242,7 +242,7 @@ botoy 插件：查看 B 站关注了多少虚拟主播
     owner='xiyaowong'
 />
 
-botoy插件，emoji合成
+botoy 插件，emoji 合成
 
 ### botoy-plugin-template
 
@@ -266,7 +266,7 @@ botoy 插件模板
     owner='xiyaowong'
 />
 
-botoy插件，用于恶心嘉心糖
+botoy 插件，用于恶心嘉心糖
 
 ### bot_translation
 
@@ -278,7 +278,7 @@ botoy插件，用于恶心嘉心糖
     owner='yuban10703'
 />
 
-botoy的翻译小插件
+botoy 的翻译小插件
 
 ### botoy-plugin-petpet
 
@@ -302,7 +302,7 @@ making some fun pictures
     owner='HYLnP'
 />
 
-botoy插件：监听群文件上传消息，并转发详细内容
+botoy 插件：监听群文件上传消息，并转发详细内容
 
 ### bot_remotechat
 
@@ -315,7 +315,6 @@ botoy插件：监听群文件上传消息，并转发详细内容
 />
 
 主人直接通过机器人进行聊天，群员通过艾特机器人和主人聊天
-
 
 ## Go
 
@@ -353,9 +352,9 @@ opqosc/OPQBot 的查梗插件
     owner='mcoo'
 />
 
-golang OPQBot插件
+golang OPQBot 插件
 
-## C#
+## C
 
 ### GenshinBot
 
@@ -432,4 +431,3 @@ IOTQQ -- Lua 插件
 />
 
 OPQ PHP 插件
-
