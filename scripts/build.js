@@ -4,6 +4,7 @@ const chalk = require('chalk')
 const { log } = require('./log')
 const { testSubmodule } = require('./utils')
 const { convertWikiSidebarLinkToInternal } = require('./patch')
+const { analyzeRanking } = require('./refreshRanking') 
 
 ;(async () => {
   // 初始化 submodule
@@ -18,6 +19,9 @@ const { convertWikiSidebarLinkToInternal } = require('./patch')
   log(chalk.yellow('🍵 开始整理 submodule wiki 内容'))
   convertWikiSidebarLinkToInternal()
   log(chalk.green('👍 submodule wiki 整理完毕'))
+  
+  // analyze ranking data
+  await analyzeRanking()
 
   // 打包
   log(chalk.yellow('🍵 开始打包'))

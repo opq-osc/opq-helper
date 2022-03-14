@@ -6,14 +6,10 @@
 
 OPQ 元宇宙
 
-## [awesome-2-methodology](https://github.com/opq-osc/awesome-2-methodology)
-
-> 内部仓库
+## [awesome-2-methodology](https://github.com/opq-osc/awesome-2-methodology) <Badge text="内部仓库" type="warning"/>
 
 一个二次元绝对的语料基本体和方法论
 
-## [safe-use-methodology](https://github.com/opq-osc/safe-use-methodology)
-
-> 内部仓库
+## [safe-use-methodology](https://github.com/opq-osc/safe-use-methodology) <Badge text="内部仓库" type="warning"/>
 
 安全使用 OPQBot 的方法论
