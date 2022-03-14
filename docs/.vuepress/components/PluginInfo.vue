@@ -2,22 +2,22 @@
   <div class="wrapper">
     <!-- lang -->
     <div class="line" v-if="lang">
-      <div class="label">Language:</div>
+      <div class="label">Language</div>
       <div class="lang">{{ lang }}</div>
     </div>
     <!-- repo -->
     <div class="line" v-if="repo">
-      <div class="label">Repo:</div>
+      <div class="label">Repo</div>
       <a target="_blank" :href="`https://github.com/${repo}`">{{ repo }}</a>
     </div>
     <!-- customLink -->
     <div class="line" v-if="customLink">
-      <div class="label">{{ customLink[0] }}：</div>
+      <div class="label">{{ customLink[0] }}</div>
       <a target="_blank" :href="customLink[1]">{{ customLink[2] || customLink[1] }}</a>
     </div>
     <!-- owner -->
     <div class="line" v-if="owner">
-      <div class="label">Owner:</div>
+      <div class="label">Owner</div>
       <div class="owner" :title="handleOwner" @click="onOwnerClick">
         <img
           :src="`https://avatars.githubusercontent.com/${handleOwner}`"
@@ -61,15 +61,16 @@ export default {
 .wrapper {
   display: inline-flex;
   flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .15);
-  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+  padding: 20px 30px;
   margin-bottom: 5px;
   cursor: pointer;
-  transition: all .4s ease-in-out;
+  transition: all .4s ease;
+  min-width: 200px;
 
   &:hover {
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
     transform: translateY(-2px);
   }
 }
@@ -84,12 +85,12 @@ export default {
   }
 
   .label {
-    margin-right: 5px;
+    margin-right: 10px;
+    font-weight: 450;
   }
 
   .lang {
     font-weight: 460;
-    font-style: italic;
   }
 
   .owner {
@@ -112,10 +113,10 @@ export default {
     }
 
     &-img {
-      $size: 25px;
+      $size: 22px;
 
       border-radius: 50%;
-      margin-right: 5px;
+      margin-right: 7px;
       width: $size;
       height: $size;
       flex-shrink: 0;
