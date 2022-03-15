@@ -100,4 +100,14 @@ module.exports = {
     ],
     ['cursor-effects'],
   ],
+
+  // 3 no
+  // TODO: use seo plugin improve site
+  // https://github.com/lorisleiva/vuepress-plugin-seo
+  markdown: {
+    externalLinks: {
+      target: '_blank',
+      rel: 'nofollow noopener noreferrer'
+    }
+  }
 }
