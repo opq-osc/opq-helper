@@ -79,6 +79,8 @@ module.exports = {
     ],
 
     sidebar: 'auto',
+    sidebarDepth: 4,
+    displayAllHeaders: true,
     lastUpdated: '上次更新',
     smoothScroll: true,
     search: false,
