@@ -316,6 +316,18 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 主人直接通过机器人进行聊天，群员通过艾特机器人和主人聊天
 
+### bot_MessageForwarding
+
+<br/>
+
+<PluginInfo 
+    lang='python'
+    repo='opq-osc/bot_MessageForwarding'
+    owner='aoguai'
+/>
+
+基于 OPQBot 和 botoy 的消息监控转发插件
+
 ## Go
 
 ### OPQBot-GroupManager
