@@ -28,8 +28,6 @@ OPQ Helper 文档站
 
 `botoy.opqbot.com` CNAME 到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
 
-<br />
-
 ## FE Resource
 
 ### opqbot-homepage
