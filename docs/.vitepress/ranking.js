@@ -38,6 +38,10 @@ export const PLUGINS = [
     "count": 1
   },
   {
+    "name": "aoguai",
+    "count": 1
+  },
+  {
     "name": "AZhrZho",
     "count": 1
   },

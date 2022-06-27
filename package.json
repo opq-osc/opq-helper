@@ -3,11 +3,17 @@
   "private": true,
   "version": "2.0.0",
   "scripts": {
+    "build:ranking": "node scripts/refreshRanking.js",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "pnpm build:ranking && vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/lodash": "^4.14.182",
+    "chalk": "^4.0.0",
+    "fs-extra": "^10.1.0",
+    "lodash": "^4.17.21",
     "sass": "^1.53.0",
     "typescript": "^4.7.4",
     "vite": "3.0.0-beta.4",
