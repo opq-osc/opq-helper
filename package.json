@@ -5,14 +5,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "dev": "node ./scripts/pre.js",
-    "dev:docs": "cross-env NODE_ENV=development vuepress dev docs",
-    "build:docs": "cross-env NODE_ENV=production vuepress build docs",
-    "build": "node ./scripts/build.js",
-    "serve": "serve ./docs/.vuepress/dist",
-    "submodule:init": "git submodule update --init --recursive",
-    "submodule:update": "git submodule update --remote --recursive"
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "sass": "^1.53.0",
