@@ -33,3 +33,7 @@ features:
     title: Rich open source
     details: 极低成本即可享受开源社区丰富的插件和功能
 ---
+
+<IndexMounted />
+
+<MicroApp />

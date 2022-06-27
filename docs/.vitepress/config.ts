@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 const lang = 'zh-CN'
 const ogDescription = 'OPQ 文档站'
-// const ogImage = 'https://main.vitejs.dev/og-image.png'
-// const ogTitle = 'Vite'
-// const ogUrl = 'https://main.vitejs.dev'
+const ogImage = 'https://opqbot.com/opq.1200x630.v2.jpg'
+const ogTitle = ogDescription
+const ogUrl = 'https://docs.opqbot.com'
 
 const ITEMS = {
   project: [
@@ -26,16 +26,16 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }]
-    // ['meta', { property: 'og:type', content: 'website' }],
-    // ['meta', { property: 'og:title', content: ogTitle }],
-    // ['meta', { property: 'og:image', content: ogImage }],
-    // ['meta', { property: 'og:url', content: ogUrl }],
-    // ['meta', { property: 'twitter:description', content: ogDescription }],
-    // ['meta', { property: 'twitter:title', content: ogTitle }],
-    // ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-    // ['meta', { property: 'twitter:image', content: ogImage }],
-    // ['meta', { property: 'twitter:url', content: ogUrl }]
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: ogTitle }],
+    ['meta', { property: 'og:image', content: ogImage }],
+    ['meta', { property: 'og:url', content: ogUrl }],
+    ['meta', { property: 'twitter:description', content: ogDescription }],
+    ['meta', { property: 'twitter:title', content: ogTitle }],
+    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { property: 'twitter:image', content: ogImage }],
+    ['meta', { property: 'twitter:url', content: ogUrl }]
   ],
 
   vue: {

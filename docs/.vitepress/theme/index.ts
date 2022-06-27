@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './styles/vars.css'
+import './styles/global.scss'
 
 // @ts-ignore
 import PluginInfo from '../components/PluginInfo.vue'
@@ -10,12 +11,18 @@ import Badge from '../compatible/Badge.vue'
 import PluginRanking from '../components/PluginRanking.vue'
 // @ts-ignore
 import Link from '../components/Link.vue'
+// @ts-ignore
+import IndexMounted from '../components/IndexMounted.vue'
+// @ts-ignore
+import MicroApp from '../components/MicroApp.vue'
 
 const components = {
   PluginInfo,
   Badge,
   PluginRanking,
-  Link
+  Link,
+  IndexMounted,
+  MicroApp
 }
 
 export default {

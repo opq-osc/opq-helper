@@ -4,8 +4,6 @@
 
 <script>
 import { MICRO_APP_ELM } from '../constants'
-import '../plugins/microApp'
-import { start } from 'qiankun'
 
 const isString = (v) => typeof v === 'string'
 
@@ -15,8 +13,9 @@ export default {
       return MICRO_APP_ELM
     },
   },
-  mounted() {
-    if (!window.qiankunStarted) {
+  async mounted() {
+    const { start } = await import('../plugins/microApp')
+    if (typeof window !== 'undefined' && !window.qiankunStarted) {
       window.qiankunStarted = true
       start({
         fetch: (url, options, ...args) => {

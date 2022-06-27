@@ -7,7 +7,7 @@ export default {
   // hack footer 部分
   // 使其可以点击跳转到 osc
   mounted() {
-    const licenseElm = document.querySelector('main .footer')
+    const licenseElm = document.querySelector('.VPFooter .message')
     if (!licenseElm) {
       return
     }
