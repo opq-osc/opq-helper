@@ -438,7 +438,7 @@ IOTQQ -- Lua 插件
 
 <PluginInfo 
     lang='php'
-    repo='opq-osc//OPQ-PHP-plugins'
+    repo='opq-osc/OPQ-PHP-plugins'
     owner='xuxiaofen2'
 />
 
