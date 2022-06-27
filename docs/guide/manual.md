@@ -5,10 +5,10 @@
 你可以从 [OPQ](https://github.com/opq-osc/OPQ) 官方项目等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行（或者 centos ）。
 
 附：
- - 最新版 opq 运行包（不一定实时更新）：[OPQBot_6.7.5_linux_amd64.tar.gz](https://github.com/opq-osc/OPQ/releases/download/v6.7.5/OPQBot_6.7.5_linux_amd64.tar.gz)
 
- - 树莓派版本请自行寻找
+- 最新版 opq 运行包（不一定实时更新）：[OPQBot_6.7.5_linux_amd64.tar.gz](https://github.com/opq-osc/OPQ/releases/download/v6.7.5/OPQBot_6.7.5_linux_amd64.tar.gz)
 
+- 树莓派版本请自行寻找
 
 ## 准备环境
 
@@ -22,15 +22,16 @@
 
 宝塔 linux 管理面板：[官方网站](https://www.bt.cn/)
 
-你可以在 官网 > 立即安装 > Ubuntu/Deepin安装命令 找到：
+你可以在 官网 > 立即安装 > Ubuntu/Deepin 安装命令 找到：
 
-<img :src="$withBase('/manual/install.jpg')" />
+![/manual/install.jpg](/manual/install.jpg)
 
 注：如图片不显示请开启代理。
 
 ```bash
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 ```
+
 注：不保证本指令实时更新，请以官网安装指令为准。
 
 ### 登录面板
@@ -38,11 +39,13 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 面板安装完成后，会显示登录地址，以及登录用户和密码，请参照进行登录，如果访问不了，请放通服务器的安全组。
 
 #### 安全组
+
 在服务器提供商管理后台进行放通，假如你是用的是阿里云，那就应该在阿里云的官网管理实例那边设置安全组。
 
 安全组如果不会配置的，请自行百度，小白不是很懂的话放通所有端口即可。
 
 ### 更换端口
+
 由于我们机器人默认运行在 `8888` 端口，而宝塔也是，所以需要更换宝塔面板端口，在**面板设置**内即可更换。
 
 ### 管理员权限
@@ -53,8 +56,8 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
     # 切换至 root 用户
     sudo -i
 ```
-注：如果因为各种原因切换失败，请自行百度寻找其他切换至 root 的方法。
 
+注：如果因为各种原因切换失败，请自行百度寻找其他切换至 root 的方法。
 
 ## 部署机器人
 
@@ -68,7 +71,7 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 如果你是使用的宝塔面板，可以通过 宝塔面板 > 文件 上传刚刚下载的运行包到服务器，这里假设上传到 `/root/opqqq` 这个文件夹内：
 
-<img :src="$withBase('/manual/makedir.jpg')" />
+![/manual/makedir.jpg](/manual/makedir.jpg)
 
 如果你是老鸟，请随意放在自己喜欢的地方。
 
@@ -76,7 +79,7 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 <br/>
 
-<img :src="$withBase('/manual/upload.jpg')" />
+![/manual/upload.jpg](/manual/upload.jpg)
 
 都是可视化面板，自行上传即可，上传完毕后右键解压。
 
@@ -91,15 +94,16 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 登录后就可以看到自己的 token 了：
 
-<img :src="$withBase('/manual/token.jpg')" />
+![/manual/token.jpg](/manual/token.jpg)
 
 <br/>
 <br/>
 
 #### 配置 token
+
 返回管理面板，在解压好的文件夹内有一个 `CoreConf.conf` 配置文件，打开填写自己的 token ：
 
-<img :src="$withBase('/manual/input-token.jpg')" />
+![/manual/input-token.jpg](/manual/input-token.jpg)
 
 **CoreConf.conf**
 
@@ -124,10 +128,13 @@ Token = "..."
 注：后半部分请根据你解压后的文件名切换，这只是一个例子。
 
 #### 试运行
+
 运行机器人：
+
 ```bash
     ./OPQBot
 ```
+
 看到 everything ok 即可进行登录。
 
 访问：`http://host:port/v1/Login/GetQRcode` 进行扫码登录，其中 `host` 是你服务器的 ip ， `port` 是你在 `CoreConf.conf` 配置的端口，如果你没有修改，这里默认是 `8888`。
@@ -139,9 +146,11 @@ Token = "..."
 #### 正式运行
 
 确认无误后，你可以通过 `nohup` 后台方式运行机器人：
+
 ```bash
     nohup ./OPQBot &
 ```
+
 会在当前程序目录自动产生一个 `nohup.out` 日志文件，有关日志查看，请看后文介绍。
 
 ### 中断程序
@@ -151,6 +160,7 @@ Token = "..."
 ### 清理后台程序
 
 当程序使用 `nohup` 运行在后台时，可以采用如下命令杀掉该进程：
+
 ```bash
     # 找到进程 pid （大小写敏感）
     # 例：找到 OPQBot 进程  ps aux | grep OPQ
@@ -158,7 +168,6 @@ Token = "..."
     # 根据 pid 杀掉进程，上一步找到的进程第一个数字即为 pid
     kill pid
 ```
-
 
 ## 进阶知识
 
@@ -171,9 +180,11 @@ Token = "..."
 一个 token 绑定一个账号，一旦第一次扫码登录了，第二次启动程序就会自动登录，不需要再扫码了。
 
 #### 使用其他账号
+
 如果要使用其他账号，请再去申请一个新 token ，用一份从压缩包（指最初下载的运行包）解压出来新的文件夹再进行配置，因为使用过的文件夹会被污染。
 
 #### 取消自动登录
+
 如果你要放弃使用，请在 手机端 QQ > 设备管理 取消机器人设备，这样就不会再自动登陆了。
 
 ### 进程查看
@@ -183,6 +194,7 @@ Token = "..."
 ```bash
     htop
 ```
+
 之后就可以查看到该进程的资源占用情况了，按 F10 退出。
 
 注：如果是 centos ，可能没有安装 htop ，如果需要使用，请自行安装。
@@ -237,7 +249,7 @@ Token = "..."
 
 用 `cat` 取全部日志，再使用 `tail` 查看 1234 行后的所有日志，再用 `head` 命令取 1234 行后的前 30 行：
 
-<img :src="$withBase('/manual/error.jpg')" />
+![/manual/error.jpg](/manual/error.jpg)
 
 如此一来，就发现了错误位置。
 
@@ -246,7 +258,9 @@ Token = "..."
 我们部署在服务器上的机器人，如果其他人知道你服务器的 ip 是很危险的，他可以通过相应的网址查看到你的控制台和机器人信息，如果需要，可以在 宝塔面板 > 安全 内关闭机器人部署的端口（默认是 `8888`）。
 
 ### 宝塔面板配置
+
 可视化面板很简单，请自行探索和百度，密码忘了请使用 shell 工具链接服务器后执行 `bt` 命令修改：
+
 ```bash
     bt
 ```
@@ -269,10 +283,10 @@ Token = "..."
 
 在使用之前先构建一个基础镜像环境 `Dockerfile` ：
 
-```yml
-    FROM ubuntu
+```yaml
+FROM ubuntu
 
-    RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y wget
 ```
 
 构建：
@@ -296,6 +310,7 @@ Token = "..."
 ```
 
 #### 内存监控
+
 ```bash
     # 找到 pid
     ps aux | grep OPQBot
@@ -304,6 +319,7 @@ Token = "..."
 ```
 
 #### 日志监控
+
 ```bash
     docker logs -tf opqqq --tail 20
 ```
@@ -315,8 +331,8 @@ Token = "..."
 如果你没有安装 wget，可能第一次运行下载资源失败。
 
 ```bash
-    apt-get update  
-    apt-get install wget  
+    apt-get update
+    apt-get install wget
 ```
 
 ### 从旧版本升级
