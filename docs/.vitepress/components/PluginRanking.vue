@@ -73,7 +73,7 @@ export default {
   display: inline-flex;
   flex-direction: column;
   max-width: 350px;
-  width: 60%;
+  width: 80vw;
 }
 
 .x_flex {
