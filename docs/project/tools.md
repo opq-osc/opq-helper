@@ -21,5 +21,3 @@ an EOC IOT Update Program :: Easy(ily) OpenSource CrossPlatfrom
 ## [OPQBot-Docker](https://github.com/opq-osc/OPQBot-Docker)
 
 OPQBot docker image
-
-
