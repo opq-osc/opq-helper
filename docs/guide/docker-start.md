@@ -2,7 +2,7 @@
 
 ## 申请 Gitter Token
 
-请直接查看 [入门教程](/guide/manual/deploy.html#%E7%94%B3%E8%AF%B7-token) 中关于如何申请Token的部分
+请直接查看 [入门教程](./manual/deploy#申请-token) 中关于如何申请Token的部分
 
 ## 启动镜像
 
