@@ -2,7 +2,7 @@
 
 选择熟悉语言的 sdk 可以帮助你快速开发一个自己的机器人功能
 
-### [botoy](https://github.com/opq-osc/botoy) (Python)
+## [botoy](https://github.com/opq-osc/botoy) (Python)
 
 OPQ/IOTQQ/IOTBot 的一个 Python 开发助手 🐌
 
