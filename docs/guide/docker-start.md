@@ -2,31 +2,49 @@
 
 ## 申请 Gitter Token
 
-请直接查看 [入门教程](./manual/deploy#申请-token) 中关于如何申请Token的部分
+请直接查看 [入门教程](./manual/deploy#申请-token) 中关于如何申请 Token 的部分
 
 ## 启动镜像
 
-这里我们直接使用 `docker run` 命令来直接启动 Docker，替换其中的`*******`为你刚刚获取到的Token
+这里我们直接使用 `docker run` 命令来直接启动 Docker，替换其中的 `*******` 为你刚刚获取到的 Token ：
 
 ```bash
-docker run -d --name opq -p 8888:8888 -e token=******* -e port=0.0.0.0:8888 opqbot/opq:latest
+  docker run -d \
+    --name opq \
+    -p 8888:8888 \
+    -e token=******* \
+    -e port=0.0.0.0:8888 \
+    opqbot/opq:latest
 ```
 
-enjoy!
+其中：
+
+ - `-p`：映射端口，如果你的本地 `8888` 已经被占用，可以换为其他端口，如 `-p 9527:8888`
+
+ - `-e token`：OPQBot 的 Token
+
+ - `-e port`：容器内 OPQBot 运行的端口，他应该和 `-p` 参数映射一致，一般情况你不需要变更他
+
 
 ## 进阶知识
 
 ### 自行修改配置文件
 
-若你需要手动修改配置文件, 路径`/root/opqbot`请自行合理修改, 需要注意的是你得先创建好`/root/opqbot/CoreConf.conf`这个文件并且配置好再启动，否则该文件在容器中会被直接删除!
+若你需要手动修改配置文件, 路径`/root/opqbot`请自行合理修改, 需要注意的是你得先创建好 `/root/opqbot/CoreConf.conf` 这个文件并且配置好再启动，否则该文件在容器中会被直接删除!
 
 ```bash
-ocker run -d --name opq -p 8888:8888 -e token=******* -e port=0.0.0.0:8888 -v /root/opqbot/CoreConf.conf:/apps/CoreConf.conf opqbot/opq:latest
+  docker run -d \
+    --name opq \
+    -p 8888:8888 \
+    -e token=******* \
+    -e port=0.0.0.0:8888 \
+    -v /root/opqbot/CoreConf.conf:/apps/CoreConf.conf \
+    opqbot/opq:latest
 ```
 
 ### 使用 docker-compose 启动容器 （推荐）
 
-编写 docker-compose.yml 文件
+编写 `docker-compose.yml` 文件
 
 ```yaml
   opqbot:
@@ -46,7 +64,7 @@ ocker run -d --name opq -p 8888:8888 -e token=******* -e port=0.0.0.0:8888 -v /r
 启动容器
 
 ```bash
-docker compose up -d
+  docker-compose up -d
 ```
 
 enjoy!
