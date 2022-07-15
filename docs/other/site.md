@@ -8,29 +8,29 @@
 
 ## 站点一览
 
-### www / @
+## www / @
 
 OPQ 主站
 
 <PluginInfo owner="spirit1431007" :customLink="['Domain', 'opqbot.com']" />
 
-### docs
+## docs
 
 OPQ Helper 文档站
 
 <PluginInfo owner="spirit1431007" :customLink="['Domain', 'docs.opqbot.com']" />
 
-### doc
+## doc
 
 `doc.opqbot.com` 会被重定向到 `docs.opqbot.com`
 
-### botoy
+## botoy
 
 `botoy.opqbot.com` CNAME 到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
 
 ## FE Resource
 
-### opqbot-homepage
+## opqbot-homepage
 
 <br/>
 
@@ -42,7 +42,7 @@ OPQ Helper 文档站
 
 主站
 
-### opq-helper
+## opq-helper
 
 <br/>
 
@@ -54,7 +54,7 @@ OPQ Helper 文档站
 
 文档站
 
-### opqbot-notify
+## opqbot-notify
 
 <br/>
 
