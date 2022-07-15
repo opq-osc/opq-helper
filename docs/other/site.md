@@ -1,5 +1,7 @@
 # 相关站点
 
+<div class="u-h2__pt-mt-30">
+
 ## 子域申请
 
 `*.opqbot.com` 域名为 opq-osc 属有，任何组织成员均可申请使用子域（已被使用的子域在下方已列出）。
@@ -32,8 +34,6 @@ OPQ Helper 文档站
 
 ## opqbot-homepage
 
-<br/>
-
 <PluginInfo 
     lang='React+Typescript'
     repo='opq-osc/opqbot-homepage'
@@ -43,8 +43,6 @@ OPQ Helper 文档站
 主站
 
 ## opq-helper
-
-<br/>
 
 <PluginInfo 
     lang='Markdown+Vue'
@@ -56,8 +54,6 @@ OPQ Helper 文档站
 
 ## opqbot-notify
 
-<br/>
-
 <PluginInfo 
     lang='React+Typescript'
     repo='opq-osc/opqbot-notify'
@@ -65,3 +61,6 @@ OPQ Helper 文档站
 />
 
 通知中心
+
+
+</div>
