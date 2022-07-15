@@ -1,10 +1,17 @@
 # 开源插件
 
+<div class="J-plugins">
+
+<style>
+.J-plugins h2 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+</style>
+
 无需开发，快速体验 OPQBot 开源社区提供的丰富插件功能。
 
 ## botoy-plugins (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/botoy-plugins'
@@ -15,8 +22,6 @@
 
 ## OPQ-SetuBot (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/OPQ-SetuBot'
     owner='yuban10703'
@@ -25,8 +30,6 @@
 OPQBOT 的色图机器人插件
 
 ## opqqq-plugin (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/opqqq-plugin'
@@ -37,8 +40,6 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 
 ## ioobot (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/ioobot'
     owner='kitUIN'
@@ -47,8 +48,6 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 一个适用于 OPQBOT 的识图姬
 
 ## OPQ-netDisk (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/OPQ-netDisk'
@@ -59,8 +58,6 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 
 ## bbb_bot (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bbb_bot'
     owner='BrandTime'
@@ -69,8 +66,6 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 BBB_Bot(棒棒冰) - based on OPQBot
 
 ## authMS (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/authMS'
@@ -81,8 +76,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 ## OPQ-netDisk (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/OPQ-netDisk'
     owner='HeiLAAS'
@@ -91,8 +84,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 使用腾讯 COS 服务作为 OPQ 机器人的网盘，模糊搜索腾讯 COS 并上传在群文件中
 
 ## o0oo00oo00oo0oo0 (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/o0oo00oo00oo0oo0'
@@ -103,8 +94,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 ## login (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/login'
     owner='xiyaowong'
@@ -113,8 +102,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 终端打印登录二维码
 
 ## bot_change_avatar (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_change_avatar'
@@ -125,8 +112,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 ## botoy_word_cloud (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/botoy_word_cloud'
     owner='yuban10703'
@@ -135,8 +120,6 @@ BBB_Bot(棒棒冰) - based on OPQBot
 词云
 
 ## bot_bili_vtbs (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_bili_vtbs'
@@ -147,8 +130,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## botoy_netease_music (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/botoy_netease_music'
     owner='yuban10703'
@@ -157,8 +138,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 网易云的点歌
 
 ## botoy-QQorder (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/botoy-QQorder'
@@ -169,8 +148,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## bot_QQorder (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bot_QQorder'
     owner='HeiLAAS'
@@ -179,8 +156,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 基于 botoy 的制定指令和日记功能;既插件版的 QQorder。
 
 ## bot_exhentai (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_exhentai'
@@ -191,8 +166,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## bot_yaowoyizhi (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bot_yaowoyizhi'
     owner='xiyaowong'
@@ -201,8 +174,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 要我一直 img 吗
 
 ## opq_reply_engine (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/opq_reply_engine'
@@ -213,8 +184,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## bot_emojimix (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bot_emojimix'
     owner='xiyaowong'
@@ -223,8 +192,6 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 botoy 插件，emoji 合成
 
 ## botoy-plugin-template (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/botoy-plugin-template'
@@ -235,8 +202,6 @@ botoy 插件模板
 
 ## bot_antiasoul (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bot_antiasoul'
     owner='xiyaowong'
@@ -245,8 +210,6 @@ botoy 插件模板
 botoy 插件，用于恶心嘉心糖
 
 ## bot_translation (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_translation'
@@ -257,8 +220,6 @@ botoy 的翻译小插件
 
 ## botoy-plugin-petpet (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/botoy-plugin-petpet'
     owner='xiyaowong'
@@ -267,8 +228,6 @@ botoy 的翻译小插件
 making some fun pictures
 
 ## bot_filespy (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_filespy'
@@ -279,8 +238,6 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## bot_remotechat (Python)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/bot_remotechat'
     owner='HYLnP'
@@ -289,8 +246,6 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 主人直接通过机器人进行聊天，群员通过艾特机器人和主人聊天
 
 ## bot_MessageForwarding (Python)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/bot_MessageForwarding'
@@ -301,8 +256,6 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## OPQBot-GroupManager (Go)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/OPQBot-GroupManager'
     owner='mcoo'
@@ -311,8 +264,6 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 OPQBot 群管理机器人
 
 ## OPQBOT-jikipedia (Go)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/OPQBOT-jikipedia'
@@ -323,8 +274,6 @@ opqosc/OPQBot 的查梗插件
 
 ## OPQPlugin (Go)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/OPQPlugin'
     owner='mcoo'
@@ -333,8 +282,6 @@ opqosc/OPQBot 的查梗插件
 golang OPQBot 插件
 
 ## GenshinBot (C#)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/GenshinBot'
@@ -345,8 +292,6 @@ golang OPQBot 插件
 
 ## IOTQQ_Plugins (Lua)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/IOTQQ_Plugins'
     owner='MengXin001'
@@ -355,8 +300,6 @@ golang OPQBot 插件
 IOTQQ 机器人 LuaPlugins 插件仓库
 
 ## lua-plugins (Lua)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/lua-plugins'
@@ -367,8 +310,6 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 ## LuaPlugins (Lua)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/LuaPlugins'
     owner='XJLZ'
@@ -377,8 +318,6 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 IOTQQ -- Lua 插件
 
 ## lua-plugins-using-lua-lib (Lua)
-
-<br/>
 
 <PluginInfo 
     repo='opq-osc/lua-plugins-using-lua-lib'
@@ -389,11 +328,11 @@ IOTQQ -- Lua 插件
 
 ## OPQ-PHP-plugins (PHP)
 
-<br/>
-
 <PluginInfo 
     repo='opq-osc/OPQ-PHP-plugins'
     owner='xuxiaofen2'
 />
 
 OPQ PHP 插件
+
+</div>
