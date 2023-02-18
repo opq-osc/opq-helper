@@ -8,7 +8,9 @@
     <!-- repo -->
     <div :class="lineClass" v-if="repo">
       <div class="label">Repo</div>
-      <a class="link" target="_blank" :href="`https://github.com/${repo}`">{{ repo }}</a>
+      <a class="link" target="_blank" :href="`https://github.com/${repo}`">{{
+        repo
+      }}</a>
     </div>
     <!-- customLink -->
     <div :class="lineClass" v-if="customLink">
@@ -18,7 +20,7 @@
       }}</a>
     </div>
     <!-- owner -->
-    <div :class="lineClass" v-if="owner">
+    <div :class="[...lineClass, 'mobile_hide']" v-if="owner">
       <div class="label">Owner</div>
       <div class="owner" :title="handleOwner" @click="onOwnerClick">
         <img
@@ -104,6 +106,12 @@ export default {
   }
 }
 
+.mobile_hide {
+  @media screen and (max-width: 600px) {
+    display: none !important;
+  }
+}
+
 .line_row {
   white-space: nowrap;
   overflow: hidden;
@@ -113,7 +121,7 @@ export default {
     padding-left: 15px;
     margin-left: 15px;
 
-    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
