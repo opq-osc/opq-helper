@@ -4,21 +4,25 @@
   "version": "2.0.0",
   "scripts": {
     "build:ranking": "node scripts/refreshRanking.js",
+    "build:plugin": "tsx scripts/sortPlugins.ts",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "pnpm build:ranking && vitepress build docs",
+    "docs:build": "pnpm build:ranking && pnpm build:plugin && vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@mdit-vue/shared": "^0.12.0",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash": "^4.14.191",
     "chalk": "^4.0.0",
     "fs-extra": "^11.1.0",
     "lodash": "^4.17.21",
     "sass": "^1.58.3",
+    "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vite": "4.1.2",
     "vitepress": "1.0.0-alpha.46",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "zx": "^7.1.1"
   },
   "dependencies": {
     "@types/node": "^18.14.0",

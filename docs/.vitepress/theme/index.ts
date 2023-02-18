@@ -15,6 +15,8 @@ import Link from '../components/Link.vue'
 import IndexMounted from '../components/IndexMounted.vue'
 // @ts-ignore
 import MicroApp from '../components/MicroApp.vue'
+// @ts-ignore
+import T from '../components/T/index.vue'
 
 const components = {
   PluginInfo,
@@ -22,7 +24,8 @@ const components = {
   PluginRanking,
   Link,
   IndexMounted,
-  MicroApp
+  MicroApp,
+  T
 }
 
 export default {

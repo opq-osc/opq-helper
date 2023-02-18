@@ -7,7 +7,7 @@ export const PLUGINS = [
   },
   {
     "name": "yuban10703",
-    "count": 5
+    "count": 6
   },
   {
     "name": "HeiLAAS",
@@ -18,15 +18,23 @@ export const PLUGINS = [
     "count": 3
   },
   {
+    "name": "EdmundFu-233",
+    "count": 2
+  },
+  {
     "name": "mcoo",
     "count": 2
   },
   {
-    "name": "kitUIN",
+    "name": "BrandTime",
     "count": 1
   },
   {
-    "name": "BrandTime",
+    "name": "aoguai",
+    "count": 1
+  },
+  {
+    "name": "kitUIN",
     "count": 1
   },
   {
@@ -35,10 +43,6 @@ export const PLUGINS = [
   },
   {
     "name": "LukWang",
-    "count": 1
-  },
-  {
-    "name": "aoguai",
     "count": 1
   },
   {
