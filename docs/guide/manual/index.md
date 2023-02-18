@@ -10,7 +10,7 @@
 
 - 最新版 Linux amd64 OPQ 运行包（不一定实时更新）：
     
-    [OPQBot_6.7.5-20220624_linux_amd64.tar](https://github.com/opq-osc/OPQ/releases/download/v6.7.5-20220624/OPQBot_6.7.5-20220624_linux_amd64.tar.gz)
+    [OPQBot_6.7.5-20230216_linux_amd64.tar.gz](https://github.com/opq-osc/OPQ/releases/download/v6.7.5-20230216/OPQBot_6.7.5-20230216_linux_amd64.tar.gz)
 
 - 树莓派版本请自行寻找
 

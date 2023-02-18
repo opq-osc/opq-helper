@@ -24,23 +24,31 @@
 
 ## 申请 token
 
-机器人运行需要一个唯一 token，在 [gitter.im](https://developer.gitter.im/docs/welcome) 内申请一个即可，可以通过：
+::: info
+因 Gitter 转向 matrix ，自 `v6.7.5-20230216` 版本起，OPQBot 暂时不需要 Token ，请任意填写。
+:::
 
-1. github 账号
-2. twitter 账号
+~~机器人运行需要一个唯一 token，在 [gitter.im](https://developer.gitter.im/docs/welcome) 内申请一个即可，可以通过：~~
 
-两种常用方式登录，不需要其他条件，有账号即可申请，如果 github 或者 twitter 的账号你都没有，请自行注册一个。
+~~1. github 账号~~
+~~2. twitter 账号~~
 
-登录后就可以看到自己的 token 了：
+~~两种常用方式登录，不需要其他条件，有账号即可申请，如果 github 或者 twitter 的账号你都没有，请自行注册一个。~~
+
+~~登录后就可以看到自己的 token 了：~~
+
+<div style="opacity: 0.3;">
 
 ![/manual/token.jpg](/manual/token.jpg)
+
+</div>
 
 <br/>
 <br/>
 
 ### 配置 token
 
-返回管理面板，在解压好的文件夹内有一个 `CoreConf.conf` 配置文件，打开填写自己的 token ：
+~~返回管理面板，在解压好的文件夹内有一个 `CoreConf.conf` 配置文件，打开填写自己的 token ：~~
 
 ![/manual/input-token.jpg](/manual/input-token.jpg)
 
@@ -54,7 +62,7 @@ OPQVer = "v6.0.16"
 Token = "..."
 ```
 
-填写完毕后保存关闭。
+任意填写 `Token` 之后保存关闭。
 
 ## 运行机器人
 
@@ -90,7 +98,11 @@ Token = "..."
     nohup ./OPQBot &
 ```
 
-会在当前程序目录自动产生一个 `nohup.out` 日志文件，有关日志查看，请看后文介绍。
+`nohup` 会在当前程序目录自动产生一个 `nohup.out` 日志文件，有关日志查看，请看后文介绍。
+
+::: tip
+此处更推荐使用 tmux 将机器人启动在后台，详见 [使用 tmux](./practices#tmux-管理进程) 。
+:::
 
 ## 中断程序
 
