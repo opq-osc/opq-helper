@@ -1,22 +1,24 @@
 <template>
-  <div class="wrapper">
+  <div :class="['wrapper', isRowLayout && 'row']">
     <!-- lang -->
-    <div class="line" v-if="lang">
+    <div :class="lineClass" v-if="lang">
       <div class="label">Language</div>
       <div class="lang">{{ lang }}</div>
     </div>
     <!-- repo -->
-    <div class="line" v-if="repo">
+    <div :class="lineClass" v-if="repo">
       <div class="label">Repo</div>
-      <a target="_blank" :href="`https://github.com/${repo}`">{{ repo }}</a>
+      <a class="link" target="_blank" :href="`https://github.com/${repo}`">{{ repo }}</a>
     </div>
     <!-- customLink -->
-    <div class="line" v-if="customLink">
+    <div :class="lineClass" v-if="customLink">
       <div class="label">{{ customLink[0] }}</div>
-      <a target="_blank" :href="customLink[1]">{{ customLink[2] || customLink[1] }}</a>
+      <a class="link" target="_blank" :href="customLink[1]">{{
+        customLink[2] || customLink[1]
+      }}</a>
     </div>
     <!-- owner -->
-    <div class="line" v-if="owner">
+    <div :class="lineClass" v-if="owner">
       <div class="label">Owner</div>
       <div class="owner" :title="handleOwner" @click="onOwnerClick">
         <img
@@ -33,14 +35,27 @@
 export default {
   name: 'PluginInfo',
   props: {
+    layout: String,
     lang: String,
     repo: String,
     owner: String,
-    customLink: [String, String, String] /** label, link href, link label */
+    customLink: [String, String, String] /** label, link href, link label */,
   },
   computed: {
     handleOwner() {
       return this.owner || this.repo.split('/')[0]
+    },
+    isRowLayout({ layout }) {
+      return layout === 'row'
+    },
+    lineClass({ isRowLayout }) {
+      const classList = ['line']
+      if (isRowLayout) {
+        classList.push('line_row')
+      } else {
+        classList.push('line_column')
+      }
+      return classList
     },
   },
   methods: {
@@ -62,16 +77,49 @@ export default {
   display: inline-flex;
   flex-direction: column;
   border-radius: 5px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
   padding: 20px 30px;
   margin-bottom: 5px;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   min-width: 200px;
 
   &:hover {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
+  }
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media screen and (max-width: 600px) {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+.line_row {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  & + & {
+    padding-left: 15px;
+    margin-left: 15px;
+
+    border-left: 1px solid rgba(0, 0, 0, .1);
+  }
+}
+
+.line_column {
+  & + & {
+    margin-top: 20px;
   }
 }
 
@@ -80,8 +128,9 @@ export default {
   align-items: center;
   flex-wrap: nowrap;
 
-  & + & {
-    margin-top: 20px;
+  .link {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .label {

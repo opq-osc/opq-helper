@@ -13,7 +13,8 @@
 
 ## <T lang="python" title="authMS" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/authMS'
     owner='HeiLAAS'
 />
@@ -22,7 +23,8 @@
 
 ## <T lang="python" title="bbb_bot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bbb_bot'
     owner='BrandTime'
 />
@@ -31,7 +33,8 @@ BBB_Bot(棒棒冰) - based on OPQBot
 
 ## <T lang="python" title="bot_antiasoul" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_antiasoul'
     owner='xiyaowong'
 />
@@ -40,7 +43,8 @@ botoy 插件，用于恶心嘉心糖
 
 ## <T lang="python" title="bot_bili_vtbs" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_bili_vtbs'
     owner='xiyaowong'
 />
@@ -49,7 +53,8 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## <T lang="python" title="bot_change_avatar" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_change_avatar'
     owner='xiyaowong'
 />
@@ -58,7 +63,8 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## <T lang="python" title="bot_DownloadGroupFiles" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_DownloadGroupFiles'
     owner='yuban10703'
 />
@@ -67,7 +73,8 @@ botoy 插件：查看 B 站关注了多少虚拟主播
 
 ## <T lang="python" title="bot_emojimix" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_emojimix'
     owner='xiyaowong'
 />
@@ -76,7 +83,8 @@ botoy 插件，emoji 合成
 
 ## <T lang="python" title="bot_exhentai" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_exhentai'
     owner='yuban10703'
 />
@@ -85,7 +93,8 @@ botoy 插件，emoji 合成
 
 ## <T lang="python" title="bot_filespy" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_filespy'
     owner='HYLnP'
 />
@@ -94,7 +103,8 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## <T lang="python" title="bot_MessageForwarding" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_MessageForwarding'
     owner='aoguai'
 />
@@ -103,7 +113,8 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## <T lang="python" title="bot_QQorder" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_QQorder'
     owner='HeiLAAS'
 />
@@ -112,7 +123,8 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## <T lang="python" title="bot_remotechat" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_remotechat'
     owner='HYLnP'
 />
@@ -121,7 +133,8 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 ## <T lang="python" title="bot_translation" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_translation'
     owner='yuban10703'
 />
@@ -130,7 +143,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="bot_yaowoyizhi" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/bot_yaowoyizhi'
     owner='xiyaowong'
 />
@@ -139,7 +153,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="botoy_netease_music" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy_netease_music'
     owner='yuban10703'
 />
@@ -148,7 +163,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="botoy_word_cloud" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy_word_cloud'
     owner='yuban10703'
 />
@@ -157,7 +173,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="Botoy-BaiduAIRevokeBot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/Botoy-BaiduAIRevokeBot'
     owner='EdmundFu-233'
 />
@@ -166,7 +183,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="Botoy-ChatGPTBot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/Botoy-ChatGPTBot'
     owner='EdmundFu-233'
 />
@@ -175,7 +193,8 @@ botoy 的翻译小插件
 
 ## <T lang="python" title="botoy-plugin-petpet" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy-plugin-petpet'
     owner='xiyaowong'
 />
@@ -184,7 +203,8 @@ making some fun pictures
 
 ## <T lang="python" title="botoy-plugin-template" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy-plugin-template'
     owner='xiyaowong'
 />
@@ -193,7 +213,8 @@ botoy 插件模板
 
 ## <T lang="python" title="botoy-plugins" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy-plugins'
     owner='xiyaowong'
 />
@@ -202,7 +223,8 @@ botoy 插件模板
 
 ## <T lang="python" title="botoy-QQorder" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/botoy-QQorder'
     owner='HYLnP'
 />
@@ -211,7 +233,8 @@ botoy 插件模板
 
 ## <T lang="python" title="ioobot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/ioobot'
     owner='kitUIN'
 />
@@ -220,7 +243,8 @@ botoy 插件模板
 
 ## <T lang="python" title="login" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/login'
     owner='xiyaowong'
 />
@@ -229,7 +253,8 @@ botoy 插件模板
 
 ## <T lang="python" title="o0oo00oo00oo0oo0" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/o0oo00oo00oo0oo0'
     owner='Teeoo'
 />
@@ -238,7 +263,8 @@ botoy 插件模板
 
 ## <T lang="python" title="opq_reply_engine" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/opq_reply_engine'
     owner='LukWang'
 />
@@ -247,7 +273,8 @@ botoy 插件模板
 
 ## <T lang="python" title="OPQ-netDisk" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQ-netDisk'
     owner='HeiLAAS'
 />
@@ -256,7 +283,8 @@ botoy 插件模板
 
 ## <T lang="python" title="OPQ-netDisk" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQ-netDisk'
     owner='HeiLAAS'
 />
@@ -265,7 +293,8 @@ botoy 插件模板
 
 ## <T lang="python" title="OPQ-SetuBot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQ-SetuBot'
     owner='yuban10703'
 />
@@ -274,7 +303,8 @@ OPQBOT 的色图机器人插件
 
 ## <T lang="python" title="opqqq-plugin" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/opqqq-plugin'
     owner='HeiLAAS'
 />
@@ -284,7 +314,8 @@ OPQBot 即开即用的插件，自定义表情、早晚安、Vtuber/Pcr/原神 �
 
 ## <T lang="go" title="OPQBot-GroupManager" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQBot-GroupManager'
     owner='mcoo'
 />
@@ -293,7 +324,8 @@ OPQBot 群管理机器人
 
 ## <T lang="go" title="OPQBOT-jikipedia" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQBOT-jikipedia'
     owner='xiyaowong'
 />
@@ -302,7 +334,8 @@ opqosc/OPQBot 的查梗插件
 
 ## <T lang="go" title="OPQPlugin" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQPlugin'
     owner='mcoo'
 />
@@ -312,7 +345,8 @@ golang OPQBot 插件
 
 ## <T lang="csharp" title="GenshinBot" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/GenshinBot'
     owner='AZhrZho'
 />
@@ -322,7 +356,8 @@ golang OPQBot 插件
 
 ## <T lang="lua" title="IOTQQ_Plugins" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/IOTQQ_Plugins'
     owner='MengXin001'
 />
@@ -331,7 +366,8 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 ## <T lang="lua" title="lua-plugins" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/lua-plugins'
     owner='spirit1431007'
 />
@@ -340,7 +376,8 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 ## <T lang="lua" title="lua-plugins-using-lua-lib" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/lua-plugins-using-lua-lib'
     owner='xiyaowong'
 />
@@ -349,7 +386,8 @@ IOTQQ 机器人 LuaPlugins 插件仓库
 
 ## <T lang="lua" title="LuaPlugins" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/LuaPlugins'
     owner='XJLZ'
 />
@@ -359,7 +397,8 @@ IOTQQ -- Lua 插件
 
 ## <T lang="php" title="OPQ-PHP-plugins" />
 
-<PluginInfo 
+<PluginInfo
+    layout='row' 
     repo='opq-osc/OPQ-PHP-plugins'
     owner='xuxiaofen2'
 />
