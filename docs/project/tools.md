@@ -1,7 +1,5 @@
 # 实用工具
 
-<div class="u-h2__pt-mt-30">
-
 合理的使用工具可以使你获得更好的开发体验
 
 ## [panel](https://github.com/opq-osc/panel)
@@ -23,5 +21,3 @@ an EOC IOT Update Program :: Easy(ily) OpenSource CrossPlatfrom
 ## [OPQBot-Docker](https://github.com/opq-osc/OPQBot-Docker)
 
 OPQBot docker image
-
-</div>
