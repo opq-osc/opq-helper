@@ -254,6 +254,33 @@ botoy 插件：监听群文件上传消息，并转发详细内容
 
 基于 OPQBot 和 botoy 的消息监控转发插件
 
+## Botoy-ChatGPTBot (Python)
+
+<PluginInfo 
+    repo='opq-osc/Botoy-ChatGPTBot'
+    owner='EdmundFu-233'
+/>
+
+使用 OpenAI API 把 ChatGPT 带入群聊
+
+## Botoy-BaiduAIRevokeBot (Python)
+
+<PluginInfo 
+    repo='opq-osc/Botoy-BaiduAIRevokeBot'
+    owner='EdmundFu-233'
+/>
+
+使用百度 AI 文本审核功能防炸群
+
+## bot_DownloadGroupFiles (Python)
+
+<PluginInfo 
+    repo='opq-osc/bot_DownloadGroupFiles'
+    owner='yuban10703'
+/>
+
+自动下载指定群的群文件
+
 ## OPQBot-GroupManager (Go)
 
 <PluginInfo 
