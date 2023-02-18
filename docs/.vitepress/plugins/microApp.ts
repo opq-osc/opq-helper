@@ -1,15 +1,15 @@
-import { registerMicroApps, start as _start } from 'qiankun'
 import { MICRO_APP_ELM } from '../constants'
 
-if (typeof window !== 'undefined') {
+export const start = async () => {
+  const { registerMicroApps, start } = await import('qiankun')
   registerMicroApps([
     {
       name: 'opqbot-notify',
-      entry: '//fastly.jsdelivr.net/gh/opq-osc/opqbot-notify@gh-pages/index.html', // '//localhost:9528'
+      entry:
+        '//fastly.jsdelivr.net/gh/opq-osc/opqbot-notify@gh-pages/index.html', // '//localhost:9528'
       container: `#${MICRO_APP_ELM}`,
       activeRule: '/',
     },
   ])
+  start()
 }
-
-export const start = _start

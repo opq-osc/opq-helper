@@ -36,4 +36,6 @@ features:
 
 <IndexMounted />
 
-<MicroApp />
+<ClientOnly>
+  <MicroApp />
+</ClientOnly>

@@ -6,6 +6,8 @@ const ogImage = 'https://opqbot.com/opq.1200x630.v2.jpg'
 const ogTitle = ogDescription
 const ogUrl = 'https://docs.opqbot.com'
 
+const year = new Date().getFullYear()
+
 const ITEMS = {
   project: [
     { text: '开发 SDK', link: '/project/sdk' },
@@ -38,9 +40,10 @@ export default defineConfig({
     ['meta', { property: 'twitter:url', content: ogUrl }]
   ],
 
-  vue: {
-    reactivityTransform: true
-  },
+  // https://github.com/vitejs/vite/issues/7854
+  // vue: {
+  //   reactivityTransform: true
+  // },
 
   themeConfig: {
     logo: '/opq.logo-only.min.png',
@@ -56,7 +59,7 @@ export default defineConfig({
 
     footer: {
       message: 'OPQ Open Source Community',
-      copyright: 'MIT Licensed | Copyright © 2022'
+      copyright: `MIT Licensed | Copyright © ${year}`
     },
 
     nav: [

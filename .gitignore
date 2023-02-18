@@ -1,5 +1,6 @@
 .DS_Store
 /node_modules
 /docs/.vitepress/dist
+/docs/.vitepress/cache
 /docs-old
 .pnpm-*.log

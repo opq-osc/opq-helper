@@ -17,7 +17,7 @@ export default {
     const { start } = await import('../plugins/microApp')
     if (typeof window !== 'undefined' && !window.qiankunStarted) {
       window.qiankunStarted = true
-      start({
+      await start({
         fetch: (url, options, ...args) => {
           if (isString(url) && url.endsWith('html')) {
             return fetch(
