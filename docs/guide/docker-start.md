@@ -14,7 +14,7 @@
     -p 8888:8888 \
     -e token=******* \
     -e port=0.0.0.0:8888 \
-    opqbot/opq:latest
+    opqofficial/opq:latest
 ```
 
 其中：
@@ -39,7 +39,7 @@
     -e token=******* \
     -e port=0.0.0.0:8888 \
     -v /root/opqbot/CoreConf.conf:/apps/CoreConf.conf \
-    opqbot/opq:latest
+    opqofficial/opq:latest
 ```
 
 ### 使用 docker-compose 启动容器 （推荐）
@@ -48,7 +48,7 @@
 
 ```yaml
   opqbot:
-    image: 'opqbot/opq:latest'
+    image: 'opqofficial/opq:latest'
     ports:
       - '8888:8888'
     deploy:
@@ -73,7 +73,7 @@ enjoy!
 
 ```yaml
   opqbot:
-    image: 'opqbot/opq:latest'
+    image: 'opqofficial/opq:latest'
     ports:
       - '8888:8888'
     deploy:
