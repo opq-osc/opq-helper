@@ -7,7 +7,7 @@
 ## 启动镜像
 
 ::: info
-由于 Docker Hub 官方不再提供免费组织，自 `2023-03-16` 起，`opqbot/opq` 镜像永久迁移至 [`opqofficial/opq`](https://hub.docker.com/r/opqofficial/opq) 。
+由于 Docker Hub 官方不再提供免费组织，自 `2023-03-16` 起，`opqbot/opq` 镜像永久迁移至 [`opqofficial/opq`](https://hub.docker.com/r/opqofficial/opq) （尽管 `2023-03-24` Docker Hub 宣布[取消](https://www.docker.com/developers/free-team-faq/)了这一计划，但官方 OPQBot 镜像仍将从 `opqofficial` 分发）。
 :::
 
 这里我们直接使用 `docker run` 命令来直接启动 Docker，替换其中的 `*******` 为你刚刚获取到的 Token ：
