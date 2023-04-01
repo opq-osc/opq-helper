@@ -69,7 +69,7 @@ export default defineConfig({
       {
         text: '🚀 Guide',
         items: [
-          { text: '从零开始搭建 OPQBot', link: '/guide/manual/' },
+          { text: '从零开始搭建 OPQBot', link: '/guide/manual/wip' },
           { text: 'Docker 快速搭建指南', link: '/guide/docker-start' },
         ],
       },
