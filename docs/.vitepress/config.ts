@@ -11,13 +11,13 @@ const year = new Date().getFullYear()
 
 const ITEMS = {
   project: [
-    { text: '开发 SDK', link: '/project/sdk' },
-    { text: '实用工具', link: '/project/tools' },
-    {
-      text: '开源插件',
-      link: '/project/plugins',
-      items: pluginMenus,
-    },
+    { text: '开发 SDK', link: '/project/wip' },
+    // { text: '实用工具', link: '/project/tools' },
+    // {
+    //   text: '开源插件',
+    //   link: '/project/plugins',
+    //   items: pluginMenus,
+    // },
   ],
   knowledge: [
     { text: '排行榜', link: '/other/ranking' },
