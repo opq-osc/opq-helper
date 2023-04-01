@@ -20,7 +20,7 @@ const ITEMS = {
     // },
   ],
   knowledge: [
-    { text: '排行榜', link: '/other/ranking' },
+    // { text: '排行榜', link: '/other/ranking' },
     { text: 'OPQ 哲学', link: '/other/philosophy' },
     { text: '相关站点', link: '/other/site' },
   ],
@@ -81,12 +81,12 @@ export default defineConfig({
         text: '📚︎ Knowledge',
         items: ITEMS.knowledge,
       },
-      {
-        text: '✨ Wiki',
-        items: [
-          { text: 'OPQBot Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' },
-        ],
-      },
+      // {
+      //   text: '✨ Wiki',
+      //   items: [
+      //     { text: 'OPQBot Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' },
+      //   ],
+      // },
       {
         text: '🎉 About',
         link: '/about/join',

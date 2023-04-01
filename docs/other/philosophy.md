@@ -14,11 +14,11 @@ OPQ 元宇宙
 
 安全使用 OPQBot 的方法论
 
-## [awesome-2-methodology](https://github.com/opq-osc/awesome-2-methodology) <Badge text="内部仓库" type="warning"/>
+## [awesome-2-methodology](https://github.com/opq-osc/awesome-2-methodology) <Badge text="内部仓库" type="warning"/> <Badge text="旧版本" type="legacy"/>
 
 一个二次元绝对的语料基本体和方法论
 
-## [onset-methodology](https://github.com/opq-osc/onset-methodology) <Badge text="内部仓库" type="warning"/>
+## [onset-methodology](https://github.com/opq-osc/onset-methodology) <Badge text="内部仓库" type="warning"/> <Badge text="旧版本" type="legacy"/>
 
 oneset 方法论
 
