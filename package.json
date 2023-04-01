@@ -6,7 +6,7 @@
     "build:ranking": "node scripts/refreshRanking.js",
     "build:plugin": "tsx scripts/sortPlugins.ts",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "pnpm build:ranking && pnpm build:plugin && vitepress build docs",
+    "docs:build": "vitepress build docs",
     "dev": "pnpm docs:dev",
     "docs:serve": "vitepress serve docs"
   },
