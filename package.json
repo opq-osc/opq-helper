@@ -1,12 +1,13 @@
 {
   "name": "opq-helper",
   "private": true,
-  "version": "2.0.0",
+  "version": "3.0.0",
   "scripts": {
     "build:ranking": "node scripts/refreshRanking.js",
     "build:plugin": "tsx scripts/sortPlugins.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "pnpm build:ranking && pnpm build:plugin && vitepress build docs",
+    "dev": "pnpm docs:dev",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
@@ -28,11 +29,11 @@
     "@types/node": "^18.14.0",
     "qiankun": "^2.9.3"
   },
-  "packageManager": "pnpm@7.27.0",
+  "packageManager": "pnpm@8.1.0",
   "license": "MIT",
   "engines": {
-    "pnpm": "^7",
-    "node": ">=16",
+    "pnpm": "^8",
+    "node": "^18",
     "yarn": "forbidden, use pnpm",
     "npm": "forbidden, use pnpm"
   }
