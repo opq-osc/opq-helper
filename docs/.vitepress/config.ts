@@ -99,25 +99,25 @@ export default defineConfig({
           text: '从零开始搭建 OPQBot',
           items: [
             {
-              text: '准备环境',
-              link: '/guide/manual/',
+              text: '准备中',
+              link: '/guide/manual/wip',
             },
-            {
-              text: '部署本体',
-              link: '/guide/manual/deploy',
-            },
-            {
-              text: '进阶知识',
-              link: '/guide/manual/advanced',
-            },
-            {
-              text: '最佳实践',
-              link: '/guide/manual/practices',
-            },
-            {
-              text: '常见问题',
-              link: '/guide/manual/qa',
-            },
+            // {
+            //   text: '部署本体',
+            //   link: '/guide/manual/deploy',
+            // },
+            // {
+            //   text: '进阶知识',
+            //   link: '/guide/manual/advanced',
+            // },
+            // {
+            //   text: '最佳实践',
+            //   link: '/guide/manual/practices',
+            // },
+            // {
+            //   text: '常见问题',
+            //   link: '/guide/manual/qa',
+            // },
           ],
         },
         {
