@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/manual/wip
+      link: /guide/quick-start
     - theme: alt
       text: Open Gateway
       link: https://opqbot.com/

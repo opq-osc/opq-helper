@@ -1,3 +1,7 @@
+---
+outline: false
+---
+
 # Contact us
 
 ## Join us

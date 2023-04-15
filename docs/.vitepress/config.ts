@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import pluginMenus from './menu/plugins'
+// import pluginMenus from './menu/plugins'
 
 const lang = 'zh-CN'
 const ogDescription = 'OPQ 文档站'
@@ -9,15 +9,20 @@ const ogUrl = 'https://docs.opqbot.com'
 
 const year = new Date().getFullYear()
 
+const PATHS = {
+  docker: '/guide/docker-start',
+  zero_start: '/guide/quick-start',
+
+  // sdk
+  sdk: '/project/sdk',
+
+  // plugins
+  plugins: '/project/wip',
+} as const
+
 const ITEMS = {
   project: [
-    { text: '开发 SDK', link: '/project/wip' },
     // { text: '实用工具', link: '/project/tools' },
-    // {
-    //   text: '开源插件',
-    //   link: '/project/plugins',
-    //   items: pluginMenus,
-    // },
   ],
   knowledge: [
     // { text: '排行榜', link: '/other/ranking' },
@@ -25,10 +30,6 @@ const ITEMS = {
     { text: '相关站点', link: '/other/site' },
   ],
 }
-
-const PATHS = {
-  docker: '/guide/docker-start',
-} as const
 
 export default defineConfig({
   title: 'OPQHelper',
@@ -57,6 +58,8 @@ export default defineConfig({
   themeConfig: {
     logo: '/opq.logo-only.min.png',
 
+    outlineTitle: '查看目录',
+
     editLink: {
       pattern: 'https://github.com/opq-osc/opq-helper/edit/main/docs/:path',
       text: 'Suggest changes to this page',
@@ -73,7 +76,7 @@ export default defineConfig({
       {
         text: '🚀 Guide',
         items: [
-          { text: '从零开始搭建 OPQBot', link: '/guide/manual/wip' },
+          { text: '从零开始搭建 OPQBot', link: PATHS.zero_start },
           {
             text: 'Docker 快速搭建指南',
             link: PATHS.docker,
@@ -82,49 +85,51 @@ export default defineConfig({
       },
       {
         text: '🌈 Project',
-        items: ITEMS.project,
+        items: [
+          { text: 'SDK', link: PATHS.sdk },
+          { text: '开源插件', link: PATHS.plugins },
+        ],
       },
       {
         text: '📚︎ Knowledge',
         items: ITEMS.knowledge,
       },
-      // {
-      //   text: '✨ Wiki',
-      //   items: [
-      //     { text: 'OPQBot Wiki', link: 'https://github.com/opq-osc/OPQ/wiki' },
-      //   ],
-      // },
+      {
+        text: '✨ Wiki',
+        items: [
+          { text: 'OPQBot Wiki', link: 'http://wiki.opqbot.com/' },
+        ],
+      },
       {
         text: '🎉 About',
         link: '/about/join',
       },
     ],
 
+    outline: [2, 6],
+
     sidebar: {
       '/guide/': [
         {
           text: '从零开始搭建 OPQBot',
+          link: PATHS.zero_start,
           items: [
             {
-              text: '准备中',
-              link: '/guide/manual/wip',
+              text: '准备环境',
+              link: `${PATHS.zero_start}#准备环境`,
             },
-            // {
-            //   text: '部署本体',
-            //   link: '/guide/manual/deploy',
-            // },
-            // {
-            //   text: '进阶知识',
-            //   link: '/guide/manual/advanced',
-            // },
-            // {
-            //   text: '最佳实践',
-            //   link: '/guide/manual/practices',
-            // },
-            // {
-            //   text: '常见问题',
-            //   link: '/guide/manual/qa',
-            // },
+            {
+              text: '部署启动',
+              link: `${PATHS.zero_start}#部署启动`,
+            },
+            {
+              text: '进阶知识',
+              link: `${PATHS.zero_start}#进阶知识`,
+            },
+            {
+              text: '常见问题',
+              link: `${PATHS.zero_start}#常见问题`,
+            },
           ],
         },
         {
@@ -140,8 +145,41 @@ export default defineConfig({
       ],
       '/project/': [
         {
-          text: 'Project',
-          items: ITEMS.project,
+          text: '开发 SDK',
+          link: PATHS.sdk,
+          items: [
+            {
+              text: 'Python',
+              link: `${PATHS.sdk}#python`,
+            },
+            {
+              text: 'Go',
+              link: `${PATHS.sdk}#go`,
+            },
+            {
+              text: 'JavaScript',
+              link: `${PATHS.sdk}#javascript`,
+            },
+            {
+              text: 'C#',
+              link: `${PATHS.sdk}#c`,
+            },
+            {
+              text: 'Ruby',
+              link: `${PATHS.sdk}#ruby`,
+            },
+          ],
+        },
+        {
+          text: '开源插件',
+          link: PATHS.plugins,
+          items: [
+            {
+              text: '准备中',
+              link: PATHS.plugins,
+            },
+          ],
+          // items: pluginMenus,
         },
       ],
       '/other/': [
