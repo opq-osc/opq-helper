@@ -25,13 +25,13 @@ hero:
 features:
   - icon: 🍭
     title: Easy to use
-    details: 无论你是小白还是老鸟，简单学习教程后都可轻松搭建自己的 OPQBot
+    details: 不论您是小白还是经验丰富的高手，通过简单的学习，即可轻松搭建自己的OPQBot
   - icon: 🚀
-    title: Development with power
-    details: 多语言 SDK 支持，轻松开发属于你独一无二的功能
+    title: Develop with power
+    details: 借助社区提供的多语言 SDK 支持，轻松开发独一无二的功能
   - icon: 🌈
-    title: Rich open source
-    details: 极低成本即可享受开源社区丰富的插件和功能
+    title: Enrich open source
+    details: 低成本，高价值：轻松享受开源社区提供的即开即用插件和功能
 ---
 
 <IndexMounted />
