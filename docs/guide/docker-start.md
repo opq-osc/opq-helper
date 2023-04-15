@@ -9,28 +9,28 @@ OPQBot 同时也分发 `linux/386` / `linux/amd64` / `linux/arm/v7` / `linux/arm
 ### 基本用法
 
 ```bash
-  docker run -d \
-    --name opq \
-    -e token=******* \
-    -p 8086:8086 \
-    opqofficial/opq:latest
+docker run -d \
+  --name opq \
+  -e token=******* \
+  -p 8086:8086 \
+  opqofficial/opq:latest
 ```
 
 ### 高级选项
 
 ```bash
-  docker run -d \
-    --name opq \
-    -p 9000:8086 \
-    # 指定 token
-    -e token=******* \
-    # 自定义容器内端口
-    -e port=8086 \
-    # 自定义 wsserver
-    -e wsserver=ws://127.0.0.1:8086/ws \
-    # 自定义 wthread (工作线程 default 100)
-    -e wthread=200 \
-    opqofficial/opq:latest
+docker run -d \
+  --name opq \
+  -p 9000:8086 \
+  # 指定 token
+  -e token=******* \
+  # 自定义容器内端口
+  -e port=8086 \
+  # 自定义 wsserver
+  -e wsserver=ws://127.0.0.1:8086/ws \
+  # 自定义 wthread (工作线程 default 100)
+  -e wthread=200 \
+  opqofficial/opq:latest
 ```
 
 ## Docker Compose
@@ -74,10 +74,10 @@ services:
 #### 启动容器
 
 ```bash
-  # 启动全部容器（第一次）
-  docker-compose up -d
-  # 启动指定容器
-  docker-compose up -d redis
+# 启动全部容器（第一次）
+docker-compose up -d
+# 启动指定容器
+docker-compose up -d redis
 ```
 
 #### 重启容器
@@ -85,10 +85,10 @@ services:
 除非你要升级 `opq` 二进制文件版本，否则我们不应该重启 `opq` 容器，这将使账号重新登录，造成高风险：
 
 ```bash
-  # 重启全部容器
-  docker-compose restart
-  # 重启指定容器
-  docker-compose restart redis
+# 重启全部容器
+docker-compose restart
+# 重启指定容器
+docker-compose restart redis
 ```
 
 #### 更新容器镜像版本
@@ -96,40 +96,40 @@ services:
 更新 `opq` 版本（升级 `opq`）：
 
 ```bash
-  docker-compose stop opq
+docker-compose stop opq
 
-  docker-compose rm opq
-  docker rmi opqofficial/opq:latest
+docker-compose rm opq
+docker rmi opqofficial/opq:latest
 
-  docker-compose pull opq
-  docker-compose up -d opq
+docker-compose pull opq
+docker-compose up -d opq
 ```
 
 更新 `redis` 版本：
 
 ```bash
-  docker-compose stop redis
+docker-compose stop redis
 
-  docker-compose rm redis
-  docker rmi redis:latest
+docker-compose rm redis
+docker rmi redis:latest
 
-  docker-compose pull redis
-  docker-compose up -d redis
+docker-compose pull redis
+docker-compose up -d redis
 ```
 
 #### 查看容器实时日志
 
 ```bash
-  docker-compose logs -f opq
+docker-compose logs -f opq
 ```
 
 #### 进入容器
 
 ```bash
-  docker-compose exec opq bash
-  exit
-  docker-compose exec redis bash
-  exit
+docker-compose exec opq bash
+exit
+docker-compose exec redis bash
+exit
 ```
 
 ## FAQ
