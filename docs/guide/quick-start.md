@@ -76,7 +76,7 @@ OPQBot 默认会运行在 `8086` 端口，访问 `http://{server-ip}:8086/v1/log
 
 借助 ws 连接（默认为 `ws://127.0.0.1:8086/ws`）来收发消息。
 
-通常我们会使用 [SDK](../../project/sdk) 来连接 OPQBot ，并自行编写或使用一些开源插件，请自行甄别选择。
+通常我们会使用 [SDK](../project/sdk) 来连接 OPQBot ，并自行编写或使用一些开源插件，请自行甄别选择。
 
 ## 进阶知识
 
@@ -108,7 +108,7 @@ tmux attach -t opq
 
 #### 使用 docker 管理
 
-请查看 [Docker 搭建指南](../docker-start)
+请查看 [Docker 搭建指南](./docker-start)
 
 ### 关于 Token
 
@@ -162,7 +162,7 @@ upx -d ./OPQBot
 ./OPQBot -token ****
 ```
 
-若仍存在问题，请尝试 [docker](../docker-start) 避免环境问题。
+若仍存在问题，请尝试 [docker](./docker-start) 避免环境问题。
 
 ### 登录失败
 
@@ -170,7 +170,7 @@ upx -d ./OPQBot
 
 1. 风控：请稳定 IP `15` 天以上，没有重复登录。
 
-2. 系统：是否安装了 `wget` ，尝试使用 [docker](../docker-start) 来避免系统环境问题。
+2. 系统：是否安装了 `wget` ，尝试使用 [docker](./docker-start) 来避免系统环境问题。
 
 3. 网络：是否下载失败，请尝试开启代理或配置 host 。
 
