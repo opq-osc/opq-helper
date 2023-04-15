@@ -26,6 +26,10 @@ const ITEMS = {
   ],
 }
 
+const PATHS = {
+  docker: '/guide/docker-start',
+} as const
+
 export default defineConfig({
   title: 'OPQHelper',
   description: ogDescription,
@@ -70,7 +74,10 @@ export default defineConfig({
         text: '🚀 Guide',
         items: [
           { text: '从零开始搭建 OPQBot', link: '/guide/manual/wip' },
-          { text: 'Docker 快速搭建指南', link: '/guide/docker-start' },
+          {
+            text: 'Docker 快速搭建指南',
+            link: PATHS.docker,
+          },
         ],
       },
       {
@@ -123,9 +130,10 @@ export default defineConfig({
         {
           text: '使用 Docker 快速搭建',
           items: [
+            { text: 'Docker', link: `${PATHS.docker}#docker` },
             {
-              text: 'Docker 指南',
-              link: '/guide/docker-start',
+              text: 'Docker Compose',
+              link: `${PATHS.docker}#docker-compose`,
             },
           ],
         },

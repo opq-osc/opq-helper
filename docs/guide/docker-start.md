@@ -2,16 +2,16 @@
 
 ## 跨平台说明
 
-OPQBot 同时也分发 `linux/386` / `linux/amd64` / `linux/arm/v7` / `linux/arm64` 的 Docker 镜像，这使得你可以快速跨平台启动。 
+OPQBot 同时也分发 `linux/386` / `linux/amd64` / `linux/arm/v7` / `linux/arm64` 的 Docker 镜像，这使得你可以快速跨平台启动。
 
-## 启动镜像
+## Docker
 
 ### 基本用法
 
 ```bash
   docker run -d \
     --name opq \
-    -e token=******* \ 
+    -e token=******* \
     -p 8086:8086 \
     opqofficial/opq:latest
 ```
@@ -21,69 +21,115 @@ OPQBot 同时也分发 `linux/386` / `linux/amd64` / `linux/arm/v7` / `linux/arm
 ```bash
   docker run -d \
     --name opq \
-    -p 8086:9000 \
+    -p 9000:8086 \
     # 指定 token
-    -e token=******* \ 
+    -e token=******* \
     # 自定义容器内端口
-    -e port=9000 \
+    -e port=8086 \
     # 自定义 wsserver
-    -e wsserver=ws://127.0.0.1:8081/ws \
+    -e wsserver=ws://127.0.0.1:8086/ws \
     # 自定义 wthread (工作线程 default 100)
     -e wthread=200 \
     opqofficial/opq:latest
 ```
 
-## 进阶知识
+## Docker Compose
 
-### 使用 docker-compose 启动容器
+我们更推荐使用 `docker-compose` 运维多个容器，避免了在本机安装复杂的数据库环境。
 
-使用 docker-compose 可以一并管理多个 docker 容器，并对其进行编排，这便于我们同时启动 OPQBot 与收发消息的服务（如通过 SDK 编写的插件）：
+### 使用方法
 
 ```yaml
 # docker-compose.yml
-  opqbot:
-    image: 'opqofficial/opq:latest'
+version: '3'
+services:
+  opq:
+    image: opqofficial/opq:latest
+    container_name: opq
     ports:
-      - '8086:8086'
+      - 8086:8086
     deploy:
       resources:
         limits:
           memory: 100M
     environment:
-      - token=*******
-    container_name: opqbot
+      - token=*****
+    restart: always
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - /root/opq/redis:/data
+    # redis 持久化，每 60s 打一次快照到 volumes 映射位置
+    command: redis-server --save 60 1 --loglevel warning
+    restart: always
 ```
 
-#### 运维操作
+### 运维操作
 
-启动全部容器：
-   
+<br >
+
+#### 启动容器
+
 ```bash
+  # 启动全部容器（第一次）
   docker-compose up -d
+  # 启动指定容器
+  docker-compose up -d redis
 ```
 
-重启全部容器：
+#### 重启容器
+
+除非你要升级 `opq` 二进制文件版本，否则我们不应该重启 `opq` 容器，这将使账号重新登录，造成高风险：
 
 ```bash
+  # 重启全部容器
   docker-compose restart
+  # 重启指定容器
+  docker-compose restart redis
 ```
 
-更新容器镜像版本：
+#### 更新容器镜像版本
+
+更新 `opq` 版本（升级 `opq`）：
 
 ```bash
-  docker-compose stop
+  docker-compose stop opq
 
-  docker-compose rm
+  docker-compose rm opq
   docker rmi opqofficial/opq:latest
 
-  docker-compose pull
-  docker-compose up -d
+  docker-compose pull opq
+  docker-compose up -d opq
 ```
 
-查看容器日志：
+更新 `redis` 版本：
 
 ```bash
-  docker-compose logs -f opqbot
+  docker-compose stop redis
+
+  docker-compose rm redis
+  docker rmi redis:latest
+
+  docker-compose pull redis
+  docker-compose up -d redis
+```
+
+#### 查看容器实时日志
+
+```bash
+  docker-compose logs -f opq
+```
+
+#### 进入容器
+
+```bash
+  docker-compose exec opq bash
+  exit
+  docker-compose exec redis bash
+  exit
 ```
 
 ## FAQ
