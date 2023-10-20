@@ -2,7 +2,7 @@
 
 通过涉猎 OPQ 哲学获得不一样的收获
 
-## [OPQtaverse](https://github.com/opq-osc/OPQtaverse)
+## [OPQtaverse](https://github.com/opq-osc/OPQtaverse) <Badge text="已存档" type="legacy"/>
 
 OPQ 元宇宙
 
@@ -10,7 +10,7 @@ OPQ 元宇宙
 
 问题解决方法论
 
-## [safe-use-methodology](https://github.com/opq-osc/safe-use-methodology)
+## [safe-use-methodology](https://github.com/opq-osc/safe-use-methodology) <Badge text="内部仓库" type="warning"/>
 
 安全使用 OPQBot 的方法论
 
