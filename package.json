@@ -29,7 +29,7 @@
     "@types/node": "^18.15.11",
     "qiankun": "^2.10.5"
   },
-  "packageManager": "pnpm@8.1.0",
+  "packageManager": "pnpm@8.9.2",
   "license": "MIT",
   "engines": {
     "pnpm": "^8",
