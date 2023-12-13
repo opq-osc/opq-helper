@@ -8,6 +8,10 @@
 
 OPQ/IOTQQ/IOTBot的一个Python开发助手🐌
 
+### [OlivOS-Team/OlivOS](https://github.com/OlivOS-Team/OlivOS)
+
+一个跨平台的机器人框架，以Websocket的方式与OPQBot进行通信
+
 ## Go
 
 ### [OPQBot](https://github.com/opq-osc/OPQBot)
