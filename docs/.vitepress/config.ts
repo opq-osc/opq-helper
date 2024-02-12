@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 
 const lang = 'zh-CN'
 const ogDescription = 'OPQ 文档站'
-const ogImage = 'https://opqbot.com/opq.1200x630.v2.jpg'
+const ogImage = 'https://cdn.jsdelivr.net/gh/opq-osc/opq-helper@main/images/opq.1200x630.v2.jpg'
 const ogTitle = ogDescription
 const ogUrl = 'https://docs.opqbot.com'
 

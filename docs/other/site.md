@@ -8,36 +8,17 @@
 
 ## 站点一览
 
-## www / @
-
-OPQ 主站
-
-<PluginInfo :customLink="['Domain', 'opqbot.com']" />
-
 ## docs
 
 OPQ Helper 文档站
 
 <PluginInfo :customLink="['Domain', 'docs.opqbot.com']" />
 
-## doc
-
-`doc.opqbot.com` 会被重定向到 `docs.opqbot.com`
-
 ## botoy
 
 `botoy.opqbot.com` CNAME 到 [`botoy`](https://botoy.readthedocs.io/zh_CN/latest/) 框架的 文档站
 
 ## FE Resource
-
-## opqbot-homepage
-
-<PluginInfo 
-    lang='React+Typescript'
-    repo='opq-osc/opqbot-homepage'
-/>
-
-主站
 
 ## opq-helper
 

@@ -16,9 +16,6 @@ hero:
       text: Get Started
       link: /guide/quick-start
     - theme: alt
-      text: Open Gateway
-      link: https://opqbot.com/
-    - theme: alt
       text: View on GitHub
       link: https://github.com/opq-osc/OPQ
 

@@ -2,11 +2,11 @@
 
 通过涉猎 OPQ 哲学获得不一样的收获
 
-## [OPQtaverse](https://github.com/opq-osc/OPQtaverse) <Badge text="已存档" type="legacy"/>
+## [OPQtaverse](https://github.com/opq-osc/OPQtaverse) <Badge text="Archive" type="legacy"/>
 
 OPQ 元宇宙
 
-## [resolve-issue-methodology](https://github.com/opq-osc/resolve-issue-methodology)
+## [resolve-issue-methodology](https://github.com/opq-osc/resolve-issue-methodology) <Badge text="Archive" type="legacy"/>
 
 问题解决方法论
 
