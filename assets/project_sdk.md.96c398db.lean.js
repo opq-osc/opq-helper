@@ -1,0 +1,1 @@
+import{_ as o,c as a,o as t,N as e}from"./chunks/framework.80e84516.js";const q=JSON.parse('{"title":"开发 SDK","description":"","frontmatter":{},"headers":[],"relativePath":"project/sdk.md","lastUpdated":1719737856000}'),r={name:"project/sdk.md"},h=e("",14),i=[h];function n(s,c,l,p,d,b){return t(),a("div",null,i)}const _=o(r,[["render",n]]);export{q as __pageData,_ as default};
